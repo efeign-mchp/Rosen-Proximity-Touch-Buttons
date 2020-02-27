@@ -85,42 +85,6 @@
 #define USER_LED_InputEnable()       (PORT_REGS->GROUP[0].PORT_DIRCLR = 1 << 7)
 #define USER_LED_PIN                  PORT_PIN_PA07
 
-/*** Macros for LED0 pin ***/
-#define LED0_Set()               (PORT_REGS->GROUP[0].PORT_OUTSET = 1 << 18)
-#define LED0_Clear()             (PORT_REGS->GROUP[0].PORT_OUTCLR = 1 << 18)
-#define LED0_Toggle()            (PORT_REGS->GROUP[0].PORT_OUTTGL = 1 << 18)
-#define LED0_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 18)) & 0x01)
-#define LED0_OutputEnable()      (PORT_REGS->GROUP[0].PORT_DIRSET = 1 << 18)
-#define LED0_InputEnable()       (PORT_REGS->GROUP[0].PORT_DIRCLR = 1 << 18)
-#define LED0_PIN                  PORT_PIN_PA18
-
-/*** Macros for LED1 pin ***/
-#define LED1_Set()               (PORT_REGS->GROUP[0].PORT_OUTSET = 1 << 19)
-#define LED1_Clear()             (PORT_REGS->GROUP[0].PORT_OUTCLR = 1 << 19)
-#define LED1_Toggle()            (PORT_REGS->GROUP[0].PORT_OUTTGL = 1 << 19)
-#define LED1_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 19)) & 0x01)
-#define LED1_OutputEnable()      (PORT_REGS->GROUP[0].PORT_DIRSET = 1 << 19)
-#define LED1_InputEnable()       (PORT_REGS->GROUP[0].PORT_DIRCLR = 1 << 19)
-#define LED1_PIN                  PORT_PIN_PA19
-
-/*** Macros for LED2 pin ***/
-#define LED2_Set()               (PORT_REGS->GROUP[0].PORT_OUTSET = 1 << 22)
-#define LED2_Clear()             (PORT_REGS->GROUP[0].PORT_OUTCLR = 1 << 22)
-#define LED2_Toggle()            (PORT_REGS->GROUP[0].PORT_OUTTGL = 1 << 22)
-#define LED2_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 22)) & 0x01)
-#define LED2_OutputEnable()      (PORT_REGS->GROUP[0].PORT_DIRSET = 1 << 22)
-#define LED2_InputEnable()       (PORT_REGS->GROUP[0].PORT_DIRCLR = 1 << 22)
-#define LED2_PIN                  PORT_PIN_PA22
-
-/*** Macros for LED3 pin ***/
-#define LED3_Set()               (PORT_REGS->GROUP[0].PORT_OUTSET = 1 << 23)
-#define LED3_Clear()             (PORT_REGS->GROUP[0].PORT_OUTCLR = 1 << 23)
-#define LED3_Toggle()            (PORT_REGS->GROUP[0].PORT_OUTTGL = 1 << 23)
-#define LED3_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 23)) & 0x01)
-#define LED3_OutputEnable()      (PORT_REGS->GROUP[0].PORT_DIRSET = 1 << 23)
-#define LED3_InputEnable()       (PORT_REGS->GROUP[0].PORT_DIRCLR = 1 << 23)
-#define LED3_PIN                  PORT_PIN_PA23
-
 
 
 // *****************************************************************************

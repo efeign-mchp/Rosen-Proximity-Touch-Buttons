@@ -57,6 +57,8 @@
 #include "peripheral/pm/plib_pm.h"
 #include "touch/touch.h"
 #include "peripheral/rtc/plib_rtc.h"
+#include "peripheral/tc/plib_tc0.h"
+#include "peripheral/tc/plib_tc2.h"
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
