@@ -118,19 +118,19 @@ SUBSTITUTE  GOODS,  TECHNOLOGY,  SERVICES,  OR  ANY  CLAIMS  BY  THIRD   PARTIES
 	
 #define NODE_0_PARAMS                                                                                               \
 {                                                                                                                  \
-   Y(7)|Y(3)|Y(9)|Y(8), Y(2), 10, NODE_RSEL_PRSC(RSEL_VAL_0, PRSC_DIV_SEL_2), NODE_GAIN(GAIN_1, GAIN_8), FILTER_LEVEL_32                   \
+   Y(7)|Y(3)|Y(9)|Y(8), Y(2), 10, NODE_RSEL_PRSC(RSEL_VAL_0, PRSC_DIV_SEL_1), NODE_GAIN(GAIN_1, GAIN_8), FILTER_LEVEL_32                   \
 }
 #define NODE_1_PARAMS                                                                                               \
 {                                                                                                                  \
-   Y(7)|Y(2)|Y(9)|Y(8), Y(3), 10, NODE_RSEL_PRSC(RSEL_VAL_0, PRSC_DIV_SEL_2), NODE_GAIN(GAIN_1, GAIN_8), FILTER_LEVEL_32                   \
+   Y(7)|Y(2)|Y(9)|Y(8), Y(3), 10, NODE_RSEL_PRSC(RSEL_VAL_0, PRSC_DIV_SEL_1), NODE_GAIN(GAIN_1, GAIN_8), FILTER_LEVEL_32                   \
 }
 #define NODE_2_PARAMS                                                                                               \
 {                                                                                                                  \
-   Y(7)|Y(2)|Y(3)|Y(8), Y(9), 5, NODE_RSEL_PRSC(RSEL_VAL_0, PRSC_DIV_SEL_2), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_32                   \
+   Y(7)|Y(2)|Y(3)|Y(8), Y(9), 5, NODE_RSEL_PRSC(RSEL_VAL_0, PRSC_DIV_SEL_1), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_32                   \
 }
 #define NODE_3_PARAMS                                                                                               \
 {                                                                                                                  \
-   Y(7)|Y(2)|Y(3)|Y(9), Y(8), 5, NODE_RSEL_PRSC(RSEL_VAL_0, PRSC_DIV_SEL_2), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_32                   \
+   Y(7)|Y(2)|Y(3)|Y(9), Y(8), 5, NODE_RSEL_PRSC(RSEL_VAL_0, PRSC_DIV_SEL_1), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_32                   \
 }
 
 /**********************************************************/

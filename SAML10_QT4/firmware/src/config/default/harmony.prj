@@ -611,8 +611,8 @@
           <Name dnOrder="1">touch.h</Name>
           <LogicalPath dnOrder="2">config/default/touch/</LogicalPath>
           <PhysicalPath dnOrder="3">/touch/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">F678C8AE5D3469AE7C043AD69AB5FE21</GeneratedChecksum>
-          <UserChecksum dnOrder="5">F678C8AE5D3469AE7C043AD69AB5FE21</UserChecksum>
+          <GeneratedChecksum dnOrder="4">7B1CABC6B9A0CB1AA981233D057E1C6B</GeneratedChecksum>
+          <UserChecksum dnOrder="5">7B1CABC6B9A0CB1AA981233D057E1C6B</UserChecksum>
         </File>
         <File dnOrder="76">
           <Type dnOrder="0">HEADER</Type>
