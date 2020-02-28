@@ -1,0 +1,1398 @@
+format_version: '2'
+name: My Project
+versions:
+  api: '1.0'
+  backend: 1.7.298
+  commit: 1e07622763d149970fd8808a8f12ff3b1e84e0d7
+  content: unknown
+  content_pack_name: unknown
+  format: '2'
+  frontend: 1.7.298
+  packs_version_avr8: 1.0.1408
+  packs_version_qtouch: unknown
+  packs_version_sam: 1.0.1373
+  version_backend: 1.7.298
+  version_frontend: ''
+board:
+  identifier: ATtiny3217XplainedPro
+  device: ATtiny3217-MFR
+details: null
+application: null
+middlewares:
+  QTOUCH_LIBRARY_0:
+    user_label: QTOUCH_LIBRARY_0
+    configuration: {}
+    definition: Atmel:QTOUCH_TINY_AVR:1.0.0::QTouch_Standard_Library
+    functionality: QTouch_Library
+    api: QTouch:General:Core
+    dependencies: {}
+  QTOUCH_INFO_0:
+    user_label: QTOUCH_INFO_0
+    configuration:
+      acquisition_versions_details: "{\\\n\t\t\t\t\t\t\t\t\t\t\t'acquisitionComment':'[device,\
+        \ acq with runtime, without runtime]',\\\n\t\t\t\t\t\t\t\t\t\t\t'acquisitionVersions':\
+        \ [\\\n\t\t\t\t\t\t\t\t\t\t\t\t['atmega328pb', '1.3', '1.3'], ['attiny81',\
+        \ '1.4', '1.4'], ['atsamd1', '1.7', '1.7'],\\\n\t\t\t\t\t\t\t\t\t\t\t\t['atmega324pb',\
+        \ '1.5', '1.5'], ['attiny161', '1.2', '1.2'], ['attiny321', '1.2', '1.2'],\\\
+        \n\t\t\t\t\t\t\t\t\t\t\t\t['atsame5', '1.2', '1.2'], ['atsamd21', '1.3', '1.3'],\
+        \ ['atsamha1', '1.3', '1.3'],\\\n\t\t\t\t\t\t\t\t\t\t\t\t['atsamda1', '1.3',\
+        \ '1.3'], ['atsamc20', '1.4', '1.4'], ['atsamc21', '1.4', '1.4'],\\\n\t\t\t\
+        \t\t\t\t\t\t\t\t\t['atsaml21', '1.1', '1.1'], ['atsaml22', '1.1', '1.1'],\
+        \ ['atsamd20', '1.1', '1.1'],\\\n\t\t\t\t\t\t\t\t\t\t\t\t['atsaml11', '1.2',\
+        \ '1.2'],['atsaml10', '1.2', '1.2']\\\n\t\t\t\t\t\t\t\t\t\t\t]\\\n\t\t\t\t\
+        \t\t\t\t\t\t}"
+      acquisition_versions_details_parallel: "{\\\n\t\t\t\t\t\t\t\t\t\t\t'acquisitionCommentParallel':'[device,\
+        \ acq with runtime, without runtime]',\\\n\t\t\t\t\t\t\t\t\t\t\t'acquisitionVersionsParallel':\
+        \ [\\\n\t\t\t\t\t\t\t\t\t\t\t\t['attiny161', '1.0', '1.0'], ['attiny321',\
+        \ '1.0', '1.0'],\\\n\t\t\t\t\t\t\t\t\t\t\t\t['atsaml11', '1.0', '1.0'],['atsaml10',\
+        \ '1.0', '1.0']\\\n\t\t\t\t\t\t\t\t\t\t\t]\\\n\t\t\t\t\t\t\t\t\t\t}"
+      content_version: (CONTENT 6.5)
+      device_clock_configuration: "{'deviceClockSettings': {\\\n'ATtiny':{ 'sources':[{'32KHz\
+        \ divided by 32':{'clkctrl_mclkctrla_cksel':'32KHz Internal Ultra Low Power\
+        \ Oscillator (OSCULP32K)'}},\\ \n                        {'Main Clock (CLK_MAIN)':{'clkctrl_mclkctrla_cksel':'20MHz\
+        \ Internal Oscillator (OSC20M)',\\ \n                                    \
+        \                    'clkctrl_mclkctrlb_pdiv':'2',\\ \n                  \
+        \                                      'clkctrl_mclkctrlb_pen':false }\\ \n\
+        \                              },\\\n                        {'RTC Clock (CLK_RTC)':{'rtc_ctrla_rtcen':true,\\\
+        \ \n                                                      'rtc_clksel_clksel':'32KHz\
+        \ Internal Ultra Low Power Oscillator (OSCULP32K)',\\ \n                 \
+        \                                     'rtc_ctrla_prescaler':'1'\\ \n     \
+        \                                                 }\\\n                  \
+        \            }\\ \n                            ],\\ \n                   'modules':[{'Timer':{'RTC':{'currentValue':'RTC\
+        \ Clock (CLK_RTC)'}}},\\ \n                              {'PTC':{'PTC':{'currentValue':'Main\
+        \ Clock (CLK_MAIN)'}}}]\\ \n                 },\\\n'SAM1':{ 'oscillators':[{'32kHz\
+        \ Ultra Low Power Internal Oscillator (OSCULP32K)':{}},\\ \n             \
+        \                   {'8MHz Internal Oscillator (OSC8M)':{'osc8m_presc':'2'}},\\\
+        \ \n                                {'Digital Frequency Locked Loop (DFLL48M)':{'dfll48m_ref_clock':'Generic\
+        \ clock generator 3',\\ \n                                               \
+        \                             'dfll48m_mode':'Closed Loop Mode',\\\n     \
+        \                                                                       'dfll_arch_cstep':'10',\\\
+        \ \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\
+        \                                                                        \
+        \    'dfll_arch_fstep':'10',\\ \n                                        \
+        \                                    'dfll48m_mul':'1500'\\ \n           \
+        \                                                                 }\\ \n \
+        \                               }\\ \n                               ],\\\
+        \ \n          'sources':[{'Generic clock generator 0':{'gclk_arch_gen_0_enable':true,\\\
+        \ \n                        'gclk_gen_0_oscillator':'Digital Frequency Locked\
+        \ Loop (DFLL48M)',\\ \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n     \
+        \                                                     'gclk_gen_0_div':'1'\\\
+        \ \n                                                          }\\ \n     \
+        \                       },\\ \n                    {'Generic clock generator\
+        \ 1':{'gclk_arch_gen_1_RUNSTDBY':true,\\ \n                              \
+        \                            'gclk_arch_gen_1_enable':true,\\ \n         \
+        \                                                 'gclk_gen_1_oscillator':'32kHz\
+        \ Ultra Low Power Internal Oscillator (OSCULP32K)',\\ \n                 \
+        \                                         'gclk_gen_1_div':'1'\\ \n      \
+        \                                                   }\\ \n               \
+        \     },\\ \n                    {'Generic clock generator 2':{'gclk_arch_gen_2_RUNSTDBY':true,\\\
+        \ \n                                                          'gclk_arch_gen_2_enable':true,\\\
+        \ \n                                                          'gclk_gen_2_oscillator':'8MHz\
+        \ Internal Oscillator (OSC8M)',\\ \n                                     \
+        \                     'gclk_gen_2_div':'1'\\ \n                          \
+        \                               }\\ \n                            },\\\n \
+        \                   {'Generic clock generator 3':{'gclk_arch_gen_3_enable':true,\\\
+        \ \n                                                          'gclk_gen_3_oscillator':'8MHz\
+        \ Internal Oscillator (OSC8M)',\\ \n                                     \
+        \                     'gclk_gen_3_div':'125'\\ \n                        \
+        \                                 }\\ \n                            }\\ \t\
+        \t\n                     ],\\ \n                'modules':[{'PTC':{'PTC':{'currentValue':'Generic\
+        \ clock generator 2'}}},\\ \n                           {'Timer':{'RTC':{'currentValue':'Generic\
+        \ clock generator 1'}}},\\ \n                           {'USART':{'Slow':{'currentValue':'Generic\
+        \ clock generator 1'},\\ \n                                     'Core':{'currentValue':'Generic\
+        \ clock generator 0'}\\ \n                                    }\\ \n     \
+        \                       }\\ \n                          ],\\\n           \
+        \     'systems':[{'CPU':{'nvm_wait_states':'2'}}]\\\n                },\\\
+        \ \n'SAM2':\t{ 'oscillators':[{'16MHz Internal Oscillator (OSC16M)':{'osc16m_freq':'16'}},{'32kHz\
+        \ Ultra Low Power Internal Oscillator (OSCULP32K)':{'rtc_1khz_selection':false}}],\\\
+        \n                    'sources'  :[{'Generic clock generator 0':{'gclk_gen_0_oscillator':'16MHz\
+        \ Internal Oscillator (OSC16M)',\\ \n                                 'gclk_gen_0_div':'1'}},\\\
+        \ \n                                 {'Generic clock generator 1':{'gclk_gen_1_oscillator':'16MHz\
+        \ Internal Oscillator (OSC16M)',\\ \n                                 'gclk_gen_1_div':'4'}}],\\\
+        \ \n                'modules'      :[{'PTC':{'PTC':{'currentValue':'Generic\
+        \ clock generator 1'}}},\\ \t\t\t\t\t\t\t\t\t\t\t\t\t\t         \n       \
+        \                          {'USART':{'Slow':{'currentValue':'Generic clock\
+        \ generator 2'},\\ \n                                     'Core':{'currentValue':'Generic\
+        \ clock generator 0'}\\ \n                                    }}\\ \n    \
+        \                      ],\\\n                'systems':[{'CPU':{'nvm_wait_states':'2'}}]\\\
+        \ \n                },\\ \n'SAM3':\t{ 'oscillators':[{'48MHz Internal Oscillator\
+        \ (OSC48M)':{'osc48m_div':'0'}}],\\ \n                    'sources'  :[{'Generic\
+        \ clock generator 0':{'gclk_gen_0_oscillator':'48MHz Internal Oscillator (OSC48M)',\\\
+        \ \n                                 'gclk_gen_0_div':'1'}},\\ \n        \
+        \                         {'Generic clock generator 1':{'gclk_gen_1_oscillator':'48MHz\
+        \ Internal Oscillator (OSC48M)',\\ \n                                 'gclk_gen_1_div':'12'}}],\\\
+        \n                'modules'      :[{'PTC':{'PTC':{'currentValue':'Generic\
+        \ clock generator 1'}}},\\ \t\t\t\t\t\t\t\t\t\t\t\t\t\t         \n       \
+        \                          {'USART':{'Slow':{'currentValue':'Generic clock\
+        \ generator 2'},\\ \n                                     'Core':{'currentValue':'Generic\
+        \ clock generator 1'}\\ \n                                    }}\\ \n    \
+        \                      ],\\\n                'systems':[{'CPU':{'nvm_wait_states':'2'}}]\\\
+        \ \n                },\\ \n'SAM4':\t{ 'oscillators':[{'32kHz Ultra Low Power\
+        \ Internal Oscillator (OSCULP32K)':{}},\\ \n                             \
+        \   {'Digital Frequency Locked Loop (DFLL48M)':{'dfll_ref_clock':'Generic\
+        \ clock generator 3',\\ \n                                               \
+        \                             'dfll_mode':'Closed Loop Mode',\\\n        \
+        \                                                                    'dfll_arch_cstep':10,\\\
+        \ \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\
+        \                                                                        \
+        \    'dfll_arch_fstep':10,\\ \n                                          \
+        \                                  'dfll_mul':1464\\ \n                  \
+        \                                                          }\\ \n        \
+        \                        },\\\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t{'External\
+        \ Crystal Oscillator 8-48MHz (XOSC1)':{'xosc1_arch_enable':'False'}\\\n\t\t\
+        \t\t\t\t\t\t\t\t\t\t\t\t\t\t}\\\n                               ],\\ \n  \
+        \        'sources':[{'Generic clock generator 0':{'gclk_gen_0_oscillator':'Digital\
+        \ Frequency Locked Loop (DFLL48M)',\\ \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\
+        \t\t\t\t \n                                                          'gclk_gen_0_div':1\\\
+        \ \n                                                          }\\ \n     \
+        \                       },\\ \n                    {'Generic clock generator\
+        \ 1':{'gclk_gen_1_oscillator':'Digital Frequency Locked Loop (DFLL48M)',\\\
+        \ \n                                                          'gclk_gen_1_div':6\\\
+        \ \n                                                         }\\ \n      \
+        \              },\\\n                    {'Generic clock generator 3':{'gclk_gen_3_oscillator':'32kHz\
+        \ Ultra Low Power Internal Oscillator (OSCULP32K)',\\ \n                 \
+        \                                         'gclk_gen_3_div':1\\ \n        \
+        \                                                 }\\ \n                 \
+        \   }\\\n                    ],\\ \n                'modules':[{'PTC':{'ADC':{'currentValue':'Generic\
+        \ clock generator 1'}}},\\ \n                           {'Timer':{'RTC':{'currentValue':'RTC\
+        \ source'}}},\\ \n                           {'USART':{'Slow':{'currentValue':'Generic\
+        \ clock generator 3'},\\ \n                                     'Core':{'currentValue':'Generic\
+        \ clock generator 0'}\\ \n                                    }\\ \n     \
+        \                       }\\ \n                          ],\\\n           \
+        \     'systems':[{'CPU':{'nvm_wait_states':2}}]\\ \n                }\\  \n\
+        \                }\\\n}"
+      device_clock_configuration_ds: "{'deviceClockSettingsDS': {\\\n'ATSAMC21' :\
+        \ {\\ \n\t\t\t\t'tc': {'tc_gclk_selection': 'Generic clock generator 1' },\\\
+        \n\t\t\t\t'tcc': {'tcc_gclk_selection': 'Generic clock generator 1'},\\\n\t\
+        \t\t\t'evsys':{'evsys_clk_selection_2': 'Generic clock generator 1', 'evsys_clk_selection_3':\
+        \ 'Generic clock generator 1'}\\\n               },\\\n'ATSAMC20' : {\\\n\t\
+        \t\t\t'tc': {'tc_gclk_selection': 'Generic clock generator 1' },\\\n\t\t\t\
+        \t'tcc': {'tcc_gclk_selection': 'Generic clock generator 1'},\\\n\t\t\t\t\
+        'evsys':{'evsys_clk_selection_2': 'Generic clock generator 1', 'evsys_clk_selection_3':\
+        \ 'Generic clock generator 1'}\\\n               },\\\n'ATSAML21' : {\\ \n\
+        \t\t\t\t'tc': {'tc_gclk_selection': 'Generic clock generator 1' },\\\n\t\t\
+        \t\t'tcc': {'tcc_gclk_selection': 'Generic clock generator 1'},\\\n\t\t\t\t\
+        'evsys':{'evsys_clk_selection_2': 'Generic clock generator 1', 'evsys_clk_selection_3':\
+        \ 'Generic clock generator 1'}\\\n               },\\\n'ATSAML22' : {\\\n\t\
+        \t\t\t'tc': {'tc_gclk_selection': 'Generic clock generator 1' },\\\n\t\t\t\
+        \t'tcc': {'tcc_gclk_selection': 'Generic clock generator 1'},\\\n\t\t\t\t\
+        'evsys':{'evsys_clk_selection_2': 'Generic clock generator 1', 'evsys_clk_selection_3':\
+        \ 'Generic clock generator 1'}\\\n               },\\\n'ATSAMD21' : {\\\n\t\
+        \t\t\t'tc': {'tc_gclk_selection': 'Generic clock generator 2' },\\\n\t\t\t\
+        \t'tcc': {'tcc_gclk_selection': 'Generic clock generator 2'},\\\n\t\t\t\t\
+        'evsys':{'evsys_clk_selection_2': 'Generic clock generator 2', 'evsys_clk_selection_3':\
+        \ 'Generic clock generator 2'}\\\n               },\\\n'ATSAMDA1' : {\\\n\t\
+        \t\t\t'tc': {'tc_gclk_selection': 'Generic clock generator 2' },\\\n\t\t\t\
+        \t'tcc': {'tcc_gclk_selection': 'Generic clock generator 2'},\\\n\t\t\t\t\
+        'evsys':{'evsys_clk_selection_2': 'Generic clock generator 2', 'evsys_clk_selection_3':\
+        \ 'Generic clock generator 2'}\\\n               },\\\n'ATSAMHA1' : {\\\n\t\
+        \t\t\t'tc': {'tc_gclk_selection': 'Generic clock generator 2' },\\\n\t\t\t\
+        \t'tcc': {'tcc_gclk_selection': 'Generic clock generator 2'},\\\n\t\t\t\t\
+        'evsys':{'evsys_clk_selection_2': 'Generic clock generator 2', 'evsys_clk_selection_3':\
+        \ 'Generic clock generator 2'}\\\n               },\\\n'ATSAME54' : {\\\n\t\
+        \t\t\t'tc': {'tc_gclk_selection': 'Generic clock generator 1' },\\\n\t\t\t\
+        \t'tcc': {'tcc_gclk_selection': 'Generic clock generator 1'},\\\n\t\t\t\t\
+        'evsys':{'evsys_clk_selection_2': 'Generic clock generator 1', 'evsys_clk_selection_3':\
+        \ 'Generic clock generator 1'}\\\n               },\\\n'ATSAME53' : {\\\n\t\
+        \t\t\t'tc': {'tc_gclk_selection': 'Generic clock generator 1' },\\\n\t\t\t\
+        \t'tcc': {'tcc_gclk_selection': 'Generic clock generator 1'},\\\n\t\t\t\t\
+        'evsys':{'evsys_clk_selection_2': 'Generic clock generator 1', 'evsys_clk_selection_3':\
+        \ 'Generic clock generator 1'}\\\n               },\\\n'ATSAME51' : {\\\n\t\
+        \t\t\t'tc': {'tc_gclk_selection': 'Generic clock generator 1' },\\\n\t\t\t\
+        \t'tcc': {'tcc_gclk_selection': 'Generic clock generator 1'},\\\n\t\t\t\t\
+        'evsys':{'evsys_clk_selection_2': 'Generic clock generator 1', 'evsys_clk_selection_3':\
+        \ 'Generic clock generator 1'}\\\n               },\\\n'ATSAMD51' : {\\\n\t\
+        \t\t\t'tc': {'tc_gclk_selection': 'Generic clock generator 1' },\\\n\t\t\t\
+        \t'tcc': {'tcc_gclk_selection': 'Generic clock generator 1'},\\\n\t\t\t\t\
+        'evsys':{'evsys_clk_selection_2': 'Generic clock generator 1', 'evsys_clk_selection_3':\
+        \ 'Generic clock generator 1'}\\\n               }\\\n}\\\n}"
+      device_clock_configuration_ptc: "{\\\n\t\t\t\t\t\t\t\t'deviceComment':'[device,\
+        \ minimum, maxmimum]',\\\n\t\t\t\t\t\t\t\t'deviceClockPTCValues': [\\\n\t\t\
+        \t\t\t\t\t\t\t['atmega', 0.2 , 1],\\\n\t\t\t\t\t\t\t\t\t['attiny', 0.2 , 1.5],\\\
+        \n\t\t\t\t\t\t\t\t\t['atsamd10', 0.1 , 1],\\\n\t\t\t\t\t\t\t\t\t['atsamd11',\
+        \ 0.1 , 1],\\\n\t\t\t\t\t\t\t\t\t['atsamd20', 0.1 , 1],\\\n\t\t\t\t\t\t\t\t\
+        \t['atsamd21', 0.1 , 1],\\\n\t\t\t\t\t\t\t\t\t['atsamda1', 0.1 , 1],\\\n\t\
+        \t\t\t\t\t\t\t\t['atsamha1', 0.1 , 1],\\\n\t\t\t\t\t\t\t\t\t['atsamd51', 0.16\
+        \ , 2],\\\n\t\t\t\t\t\t\t\t\t['atsame51', 0.16 , 2],\\\n\t\t\t\t\t\t\t\t\t\
+        ['atsame53', 0.16 , 2],\\\n\t\t\t\t\t\t\t\t\t['atsame54', 0.16 , 2],\\\n\t\
+        \t\t\t\t\t\t\t\t['atsamc20', 0.1 , 1],\\\n\t\t\t\t\t\t\t\t\t['atsamc21', 0.1\
+        \ , 1],\\\n\t\t\t\t\t\t\t\t\t['atsaml21', 0.1 , 1],\\\n\t\t\t\t\t\t\t\t\t\
+        ['atsaml22', 0.1 , 1],\\\n\t\t\t\t\t\t\t\t\t['atsaml10', 0.5 , 2],\\\n\t\t\
+        \t\t\t\t\t\t\t['atsaml11', 0.5 , 2],\\\n\t\t\t\t\t\t\t\t\t['avr128da', 0.250,\
+        \ 2],\\\n\t\t\t\t\t\t\t\t\t['avr64da', 0.250, 2],\\\n\t\t\t\t\t\t\t\t\t['avr32da',\
+        \ 0.250, 2]\\\n\t\t\t\t\t\t\t\t\t],\\\n\t\t\t\t\t\t\t\t\t'deviceClockInformation':\
+        \ {\\\n\t\t\t\t\t\t\t\t\t'SAM1': [\\\n\t\t\t\t\t\t\t\t\t\t['Oscillator', 'Prescaler\
+        \ Divisor' , 'Frequency'],\\\n\t\t\t\t\t\t\t\t\t\t['OSC8M', 2 , '4MHz'], ['DFLL48M',\
+        \ 1 , '48MHz(GCLK3, closed loop, multi factor 1500)'],\\\n\t\t\t\t\t\t\t\t\
+        \t\t['Generic clock(Peripherals)', 'Source' , 'Frequency'],\\\n\t\t\t\t\t\t\
+        \t\t\t\t['GCLK0(CPU)','DFLL48M', '48MHz'],\\ ['GCLK1(Timer)','OSCULP32K','32.768KHz'],['GCLK2(PTC,UART)',\
+        \ 'OSC8M', '4MHz'],[ 'GCLK3(DFLL Ref.)' ,'OSC8M(DIV 125)', '32KHz'],\\['Wait\
+        \ states'],['NVM states', 3]\\\n\t\t\t\t\t\t\t\t\t],\\\n\t\t\t\t\t\t\t\t\t\
+        'SAM2': [\\\n\t\t\t\t\t\t\t\t\t\t['Oscillator', 'Prescaler Divisor' , 'Frequency'],\\\
+        \n\t\t\t\t\t\t\t\t\t\t['OSC16M', 1 , '16MHz'],\\\n\t\t\t\t\t\t\t\t\t\t['Generic\
+        \ clock(Peripherals)', 'Source' , 'Frequency'],\\\n\t\t\t\t\t\t\t\t\t\t['GCLK0(CPU)','OSC16M',\
+        \ '16MHz'],\\ ['GCLK1(PTC,UART)','OSC16M(DIV 4)','4MHz'],\\['Timer (RTC)','OSCULP32K','32.768KHz'],\\\
+        \n\t\t\t\t\t\t\t\t\t\t['Wait states'],['NVM states', 2]\\\n\t\t\t\t\t\t\t\t\
+        \t],\\\n\t\t\t\t\t\t\t\t\t'SAM3': [\\\n\t\t\t\t\t\t\t\t\t\t['Oscillator',\
+        \ 'Prescaler Divisor' , 'Frequency'],\\\n\t\t\t\t\t\t\t\t\t\t['OSC48M', 1\
+        \ , '48MHz'],\\\n\t\t\t\t\t\t\t\t\t\t['Generic clock(Peripherals)', 'Source'\
+        \ , 'Frequency'],\\\n\t\t\t\t\t\t\t\t\t\t['GCLK0(CPU)','OSC48M', '48MHz'],\\\
+        \ ['GCLK1(PTC, UART)','OSC48M(DIV 12)','4MHz'],\\['Timer (RTC)','OSCULP32K','32.768KHz'],\\\
+        \n\t\t\t\t\t\t\t\t\t\t['Wait states'],['NVM states', 2]\\\n\t\t\t\t\t\t\t\t\
+        \t],\\\n\t\t\t\t\t\t\t\t\t'SAM4': [\\\n\t\t\t\t\t\t\t\t\t\t['Oscillator',\
+        \ 'Prescaler Divisor' , 'Frequency'],\\\n\t\t\t\t\t\t\t\t\t\t['DFLL48M', 1\
+        \ , '48MHz(GCLK3, closed loop, multi factor 1464)'],\\\n\t\t\t\t\t\t\t\t\t\
+        \t['Generic clock(Peripherals)', 'Source' , 'Frequency'],\\\n\t\t\t\t\t\t\t\
+        \t\t\t['GCLK0(CPU)','DFLL48M', '48MHz'],\\ ['GCLK1(PTC,UART)','DFLL48M(DIV\
+        \ 6)','8MHz'],['GCLK3(RTC)', 'ULP32K', '32.768KHz'],\\\n\t\t\t\t\t\t\t\t\t\
+        \t['Wait states'],['NVM states', 2]\\\n\t\t\t\t\t\t\t\t\t],\\\n\t\t\t\t\t\t\
+        \t\t\t'attiny': [\\\n\t\t\t\t\t\t\t\t\t\t['Oscillator', 'Prescaler Divisor'\
+        \ , 'Frequency'],\\\n\t\t\t\t\t\t\t\t\t\t['OSC20M', 1 , '20MHz'],\\\n\t\t\t\
+        \t\t\t\t\t\t\t['Generic clock(Peripherals)', 'Source' , 'Frequency'],\\\n\t\
+        \t\t\t\t\t\t\t\t\t['CLK_MAIN(CPU, UART)','OSC20M', '20MHz(Suitable for 5V\
+        \ operation-reduce the clock frequency as per datasheet for other voltages)'],\\\
+        \ ['CLK_RTC(RTC)','OSCULP32K','32.768KHz']\\\n\t\t\t\t\t\t\t\t\t\t],\\\n\t\
+        \t\t\t\t\t\t\t\t'AVRDA': [\\\n\t\t\t\t\t\t\t\t\t\t['Oscillator', 'Prescaler\
+        \ Divisor' , 'Frequency'],\\\n\t\t\t\t\t\t\t\t\t\t['OSCHF', 1 , '24MHz'],\\\
+        \n\t\t\t\t\t\t\t\t\t\t['Generic clock(Peripherals)', 'Source' , 'Frequency'],\\\
+        \n\t\t\t\t\t\t\t\t\t\t['CLK_MAIN(CPU, UART)','OSCHF', '24MHz'],\\\n\t\t\t\t\
+        \t\t\t\t\t\t['CLK_RTC(RTC)','OSC32K','32.768KHz']\\\n\t\t\t\t\t\t\t\t\t\t\
+        ]\\\n\t\t\t\t\t\t\t\t},\\\n\t\t\t\t\t\t\t\t'deviceClockInformationForLP':\
+        \ {\\\n\t\t\t\t\t\t\t\t\t'SAM1': [\\\n\t\t\t\t\t\t\t\t\t\t['Oscillator', 'Prescaler\
+        \ Divisor' , 'Frequency'],\\\n\t\t\t\t\t\t\t\t\t\t['OSC8M', 2 , '4MHz'], ['DFLL48M',\
+        \ 1 , '48MHz(GCLK3, closed loop, multi factor 1500)'],\\\n\t\t\t\t\t\t\t\t\
+        \t\t['Generic clock(Peripherals)', 'Source' , 'Frequency'],\\\n\t\t\t\t\t\t\
+        \t\t\t\t['GCLK0(CPU)','DFLL48M', '48MHz'],\\ ['GCLK1(Timer)','OSCULP32K(DIV\
+        \ 16)','32.768KHz'],['GCLK2(PTC,UART)', 'OSC8M', '4MHz'],[ 'GCLK3(DFLL Ref.)'\
+        \ ,'OSC8M(DIV 125)', '32KHz'],\\['Wait states'],['NVM states', 3]\\\n\t\t\t\
+        \t\t\t\t\t\t],\\\n\t\t\t\t\t\t\t\t\t'SAM2': [\\\n\t\t\t\t\t\t\t\t\t\t['Oscillator',\
+        \ 'Prescaler Divisor' , 'Frequency'],\\\n\t\t\t\t\t\t\t\t\t\t['OSC16M', 1\
+        \ , '16MHz'],\\\n\t\t\t\t\t\t\t\t\t\t['Generic clock(Peripherals)', 'Source'\
+        \ , 'Frequency'],\\\n\t\t\t\t\t\t\t\t\t\t['GCLK0(CPU)','OSC16M', '16MHz'],\\\
+        \ ['GCLK1(PTC,UART)','OSC16M(DIV 4)','4MHz'],\\['Timer (RTC)','OSCULP32K(rtc_1khz_selection:true)','1.024KHz'],\\\
+        \n\t\t\t\t\t\t\t\t\t\t['Wait states'],['NVM states', 2]\\\n\t\t\t\t\t\t\t\t\
+        \t],\\\n\t\t\t\t\t\t\t\t\t'SAM3': [\\\n\t\t\t\t\t\t\t\t\t\t['Oscillator',\
+        \ 'Prescaler Divisor' , 'Frequency'],\\\n\t\t\t\t\t\t\t\t\t\t['OSC48M', 1\
+        \ , '48MHz'],\\\n\t\t\t\t\t\t\t\t\t\t['Generic clock(Peripherals)', 'Source'\
+        \ , 'Frequency'],\\\n\t\t\t\t\t\t\t\t\t\t['GCLK0(CPU)','OSC48M', '48MHz'],\\\
+        \ ['GCLK1(PTC, UART)','OSC48M(DIV 12)','4MHz'],\\['Timer (RTC)','OSCULP32K(rtc_1khz_selection:true)','1.024KHz'],\\\
+        \n\t\t\t\t\t\t\t\t\t\t['Wait states'],['NVM states', 2]\\\n\t\t\t\t\t\t\t\t\
+        \t],\\\n\t\t\t\t\t\t\t\t\t'SAM4': [\\\n\t\t\t\t\t\t\t\t\t\t['Oscillator',\
+        \ 'Prescaler Divisor' , 'Frequency'],\\\n\t\t\t\t\t\t\t\t\t\t['DFLL48M', 1\
+        \ , '48MHz(GCLK3, closed loop, multi factor 1464)'],\\\n\t\t\t\t\t\t\t\t\t\
+        \t['Generic clock(Peripherals)', 'Source' , 'Frequency'],\\\n\t\t\t\t\t\t\t\
+        \t\t\t['GCLK0(CPU)','DFLL48M', '48MHz'],\\ ['GCLK1(PTC,UART)','DFLL48M(DIV\
+        \ 6)','8MHz'],['GCLK3(RTC)', 'ULP32K', '32.768KHz'],\\\n\t\t\t\t\t\t\t\t\t\
+        \t['Wait states'],['NVM states', 2]\\\n\t\t\t\t\t\t\t\t\t],\\\n\t\t\t\t\t\t\
+        \t\t\t'attiny': [\\\n\t\t\t\t\t\t\t\t\t\t['Oscillator', 'Prescaler Divisor'\
+        \ , 'Frequency'],\\\n\t\t\t\t\t\t\t\t\t\t['OSC20M', 1 , '20MHz'],\\\n\t\t\t\
+        \t\t\t\t\t\t\t['Generic clock(Peripherals)', 'Source' , 'Frequency'],\\\n\t\
+        \t\t\t\t\t\t\t\t\t['CLK_MAIN(CPU, UART)','OSC20M', '20MHz(Suitable for 5V\
+        \ operation-reduce the clock frequency as per datasheet for other voltages)'],\\\
+        \n\t\t\t\t\t\t\t\t\t\t['CLK_RTC(RTC)','32KHz divided by 32','1.024KHz']\\\n\
+        \t\t\t\t\t\t\t\t\t],\\\n\t\t\t\t\t\t\t\t\t'AVRDA': [\\\n\t\t\t\t\t\t\t\t\t\
+        \t['Oscillator', 'Prescaler Divisor' , 'Frequency'],\\\n\t\t\t\t\t\t\t\t\t\
+        \t['OSCHF', 1 , '24MHz'],\\\n\t\t\t\t\t\t\t\t\t\t['Generic clock(Peripherals)',\
+        \ 'Source' , 'Frequency'],\\\n\t\t\t\t\t\t\t\t\t\t['CLK_MAIN(CPU, UART)','OSCHF',\
+        \ '24MHz'],\\\n\t\t\t\t\t\t\t\t\t\t['CLK_RTC(RTC)','32KHz divided by 32','1.024KHz']\\\
+        \n\t\t\t\t\t\t\t\t\t\t]\\\n\t\t\t\t\t\t\t\t}\\\n                         \
+        \   }"
+      device_dma_configuration_ds: "{'deviceDMASettingsDS': {\\\n'ATSAMC21' : { 'dmac_enable':\
+        \ true ,'dmac_enable_0': true, 'dmac_channel_0_settings': true,\\\n      \
+        \         'dmac_evact_0': 'Normal transfer and conditional transfer on strobe\
+        \ trigger', \\\n\t\t\t   'dmac_evoe_0': true, 'dmac_evosel_0': 'Event strobe\
+        \ when block transfer complete', \\\n\t\t\t   'dmac_lvlen0': true, 'dmac_trifsrc_0':\
+        \ 'PTC End of Conversion Trigger', \\\n\t\t\t   'dmac_trigact_0': 'One trigger\
+        \ required for each block transfer', \\\n\t\t\t   'dmac_beatsize_0':'32-bit\
+        \ bus transfer' \t\\\n               },\\\n'ATSAMC20' : { 'dmac_enable': true\
+        \ ,'dmac_enable_0': true, 'dmac_channel_0_settings': true,\\\n           \
+        \    'dmac_evact_0': 'Normal transfer and conditional transfer on strobe trigger',\
+        \ \\\n\t\t\t   'dmac_evoe_0': true, 'dmac_evosel_0': 'Event strobe when block\
+        \ transfer complete', \\\n\t\t\t   'dmac_lvlen0': true, 'dmac_trifsrc_0':\
+        \ 'PTC End of Conversion Trigger', \\\n\t\t\t   'dmac_trigact_0': 'One trigger\
+        \ required for each block transfer', \\\n\t\t\t   'dmac_beatsize_0':'32-bit\
+        \ bus transfer' \t\\\n               },\\\n'ATSAML21' : { 'dmac_enable': true\
+        \ ,'dmac_enable_0': true, 'dmac_channel_0_settings': true,\\\n           \
+        \    'dmac_evact_0': 'Normal transfer and conditional transfer on strobe trigger',\
+        \ \\\n\t\t\t   'dmac_evoe_0': true, 'dmac_evosel_0': 'Event strobe when block\
+        \ transfer complete', \\\n\t\t\t   'dmac_lvlen0': true, 'dmac_trifsrc_0':\
+        \ 'Only software/event triggers', \\\n\t\t\t   'dmac_trigact_0': 'One trigger\
+        \ required for each block transfer', \\\n\t\t\t   'dmac_beatsize_0':'8-bit\
+        \ bus transfer', 'dmac_evie_0': true \t\\\n               },\\\n'ATSAML22'\
+        \ : { 'dmac_enable': true ,'dmac_enable_0': true, 'dmac_channel_0_settings':\
+        \ true,\\\n               'dmac_evact_0': 'Normal transfer and conditional\
+        \ transfer on strobe trigger', \\\n\t\t\t   'dmac_evoe_0': true, 'dmac_evosel_0':\
+        \ 'Event strobe when block transfer complete', \\\n\t\t\t   'dmac_lvlen0':\
+        \ true, 'dmac_trifsrc_0': 'PTC End of Conversion Trigger', \\\n\t\t\t   'dmac_trigact_0':\
+        \ 'One trigger required for each block transfer', \\\n\t\t\t   'dmac_beatsize_0':'32-bit\
+        \ bus transfer' \t\\\n               },\\\n'ATSAMD21' : { 'dmac_enable': true\
+        \ ,'dmac_enable_0': true, 'dmac_channel_0_settings': true,\\\n           \
+        \    'dmac_evact_0': 'Normal transfer and conditional transfer on strobe trigger',\
+        \ \\\n\t\t\t   'dmac_evoe_0': true, 'dmac_evosel_0': 'Event strobe when block\
+        \ transfer complete', \\\n\t\t\t   'dmac_lvlen0': true, 'dmac_trifsrc_0':\
+        \ 'Only software/event triggers', \\\n\t\t\t   'dmac_trigact_0': 'One trigger\
+        \ required for each block transfer', \\\n\t\t\t   'dmac_beatsize_0':'8-bit\
+        \ bus transfer', 'dmac_evie_0': true \t\\\n               },\\\n'ATSAMDA1'\
+        \ : { 'dmac_enable': true ,'dmac_enable_0': true, 'dmac_channel_0_settings':\
+        \ true,\\\n               'dmac_evact_0': 'Normal transfer and conditional\
+        \ transfer on strobe trigger', \\\n\t\t\t   'dmac_evoe_0': true, 'dmac_evosel_0':\
+        \ 'Event strobe when block transfer complete', \\\n\t\t\t   'dmac_lvlen0':\
+        \ true, 'dmac_trifsrc_0': 'Only software/event triggers', \\\n\t\t\t   'dmac_trigact_0':\
+        \ 'One trigger required for each block transfer', \\\n\t\t\t   'dmac_beatsize_0':'8-bit\
+        \ bus transfer', 'dmac_evie_0': true \t\\\n               },\\\n'ATSAMHA1'\
+        \ : { 'dmac_enable': true ,'dmac_enable_0': true, 'dmac_channel_0_settings':\
+        \ true,\\\n               'dmac_evact_0': 'Normal transfer and conditional\
+        \ transfer on strobe trigger', \\\n\t\t\t   'dmac_evoe_0': true, 'dmac_evosel_0':\
+        \ 'Event strobe when block transfer complete', \\\n\t\t\t   'dmac_lvlen0':\
+        \ true, 'dmac_trifsrc_0': 'Only software/event triggers', \\\n\t\t\t   'dmac_trigact_0':\
+        \ 'One trigger required for each block transfer', \\\n\t\t\t   'dmac_beatsize_0':'8-bit\
+        \ bus transfer', 'dmac_evie_0': true \t\\\n               },\\\n'ATSAME54'\
+        \ : { 'dmac_enable': true ,'dmac_channel_0_settings': true,\\\n\t\t\t   'dmac_evact_0':\
+        \ 'No action', \\\n\t\t\t   'dmac_evoe_0': true, 'dmac_evosel_0': 'Event strobe\
+        \ when block transfer complete', \\\n\t\t\t   'dmac_lvlen0': true, 'dmac_trifsrc_0':\
+        \ 'ADC0 Result Ready Trigger', \\\n\t\t\t   'dmac_trigact_0': 'One trigger\
+        \ required for each block transfer', \\\n\t\t\t   'dmac_beatsize_0':'8-bit\
+        \ bus transfer', 'dmac_evie_0': false \t\\\n\t\t\t\t},\\\n'ATSAME53' : { 'dmac_enable':\
+        \ true ,'dmac_channel_0_settings': true,\\\n\t\t\t   'dmac_evact_0': 'No action',\
+        \ \\\n\t\t\t   'dmac_evoe_0': true, 'dmac_evosel_0': 'Event strobe when block\
+        \ transfer complete', \\\n\t\t\t   'dmac_lvlen0': true, 'dmac_trifsrc_0':\
+        \ 'ADC0 Result Ready Trigger', \\\n\t\t\t   'dmac_trigact_0': 'One trigger\
+        \ required for each block transfer', \\\n\t\t\t   'dmac_beatsize_0':'8-bit\
+        \ bus transfer', 'dmac_evie_0': false \t\\\n\t\t\t\t},\\\n'ATSAME51' : { 'dmac_enable':\
+        \ true ,'dmac_channel_0_settings': true,\\\n\t\t\t   'dmac_evact_0': 'No action',\
+        \ \\\n\t\t\t   'dmac_evoe_0': true, 'dmac_evosel_0': 'Event strobe when block\
+        \ transfer complete', \\\n\t\t\t   'dmac_lvlen0': true, 'dmac_trifsrc_0':\
+        \ 'ADC0 Result Ready Trigger', \\\n\t\t\t   'dmac_trigact_0': 'One trigger\
+        \ required for each block transfer', \\\n\t\t\t   'dmac_beatsize_0':'8-bit\
+        \ bus transfer', 'dmac_evie_0': false \t\\\n\t\t\t\t},\\\n'ATSAMD51' : { 'dmac_enable':\
+        \ true ,'dmac_channel_0_settings': true,\\\n\t\t\t   'dmac_evact_0': 'No action',\
+        \ \\\n\t\t\t   'dmac_evoe_0': true, 'dmac_evosel_0': 'Event strobe when block\
+        \ transfer complete', \\\n\t\t\t   'dmac_lvlen0': true, 'dmac_trifsrc_0':\
+        \ 'ADC0 Result Ready Trigger', \\\n\t\t\t   'dmac_trigact_0': 'One trigger\
+        \ required for each block transfer', \\\n\t\t\t   'dmac_beatsize_0':'8-bit\
+        \ bus transfer', 'dmac_evie_0': false \t\\\n\t\t\t\t}\\\n}\\\n}"
+      device_evsys_configuration_ds: "{'deviceEvsysSettingsDS': {\\\n'ATSAMC21' :\
+        \ {\\ \n\t\t\t\t'TC':{\\\n\t\t\t\t\t'TC0': {'evsys_channel_23': 'Channel 2'},\\\
+        \n\t\t\t\t\t'TC1': {'evsys_channel_24': 'Channel 2'},\\\n\t\t\t\t\t'TC2':\
+        \ {'evsys_channel_25': 'Channel 2'},\\\n\t\t\t\t\t'TC3': {'evsys_channel_26':\
+        \ 'Channel 2'},\\\n\t\t\t\t\t'TC4': {'evsys_channel_27': 'Channel 2'},\\\n\
+        \t\t\t\t\t'TC5': {'evsys_channel_47': 'Channel 2'},\\\n\t\t\t\t\t'TC6': {'evsys_channel_48':\
+        \ 'Channel 2'},\\\n\t\t\t\t\t'TC7': {'evsys_channel_49': 'Channel 2'}\\\n\t\
+        \t\t\t},\\\n\t\t\t\t'TCC':{\\\n\t\t\t\t\t'TCC0': {'evsys_channel_9': 'Channel\
+        \ 2'},\\\n\t\t\t\t\t'TCC1': {'evsys_channel_15': 'Channel 2'},\\\n\t\t\t\t\
+        \t'TCC2': {'evsys_channel_19': 'Channel 2'}\\\n\t\t\t\t}\\\n             \
+        \  },\\\n'ATSAMC20' : {\\\n\t\t\t\t'TC':{\\\n\t\t\t\t\t'TC0': {'evsys_channel_23':\
+        \ 'Channel 2'},\\\n\t\t\t\t\t'TC1': {'evsys_channel_24': 'Channel 2'},\\\n\
+        \t\t\t\t\t'TC2': {'evsys_channel_25': 'Channel 2'},\\\n\t\t\t\t\t'TC3': {'evsys_channel_26':\
+        \ 'Channel 2'},\\\n\t\t\t\t\t'TC4': {'evsys_channel_27': 'Channel 2'},\\\n\
+        \t\t\t\t\t'TC5': {'evsys_channel_47': 'Channel 2'},\\\n\t\t\t\t\t'TC6': {'evsys_channel_48':\
+        \ 'Channel 2'},\\\n\t\t\t\t\t'TC7': {'evsys_channel_49': 'Channel 2'}\\\n\t\
+        \t\t\t},\\\n\t\t\t\t'TCC':{\\\n\t\t\t\t\t'TCC0': {'evsys_channel_9': 'Channel\
+        \ 2'},\\\n\t\t\t\t\t'TCC1': {'evsys_channel_15': 'Channel 2'},\\\n\t\t\t\t\
+        \t'TCC2': {'evsys_channel_19': 'Channel 2'}\\\n\t\t\t\t}\\\n             \
+        \  },\\\n'ATSAML21' : {\\ \n\t\t\t\t'TC':{\\\n\t\t\t\t\t'TC0': {'evsys_channel_26':\
+        \ 'Channel 2'},\\\n\t\t\t\t\t'TC1': {'evsys_channel_27': 'Channel 2'},\\\n\
+        \t\t\t\t\t'TC2': {'evsys_channel_28': 'Channel 2'},\\\n\t\t\t\t\t'TC3': {'evsys_channel_29':\
+        \ 'Channel 2'},\\\n\t\t\t\t\t'TC4': {'evsys_channel_26': 'Channel 2'}\\\n\t\
+        \t\t\t},\\\n\t\t\t\t'TCC':{\\\n\t\t\t\t\t'TCC0': {'evsys_channel_12': 'Channel\
+        \ 2'},\\\n\t\t\t\t\t'TCC1': {'evsys_channel_18': 'Channel 2'},\\\n\t\t\t\t\
+        \t'TCC2': {'evsys_channel_22': 'Channel 2'}\\\n\t\t\t\t}\\\n             \
+        \  },\\\n'ATSAML22' : {\\\n\t\t\t\t'TC':{\\\n\t\t\t\t\t'TC0': {'evsys_channel_15':\
+        \ 'Channel 2'},\\\n\t\t\t\t\t'TC1': {'evsys_channel_16': 'Channel 2'},\\\n\
+        \t\t\t\t\t'TC2': {'evsys_channel_17': 'Channel 2'},\\\n\t\t\t\t\t'TC3': {'evsys_channel_18':\
+        \ 'Channel 2'}\\\n\t\t\t\t},\\\n\t\t\t\t'TCC':{\\\n\t\t\t\t\t'TCC0': {'evsys_channel_9':\
+        \ 'Channel 2'}\\\n\t\t\t\t}\\\n               },\\\n'ATSAMD21' : {\\\n\t\t\
+        \t\t'TC':{\\\n\t\t\t\t\t'TC3': {'evsys_channel_18': 'Channel 3'},\\\n\t\t\t\
+        \t\t'TC4': {'evsys_channel_19': 'Channel 3'},\\\n\t\t\t\t\t'TC5': {'evsys_channel_20':\
+        \ 'Channel 3'},\\\n\t\t\t\t\t'TC6': {'evsys_channel_21': 'Channel 3'},\\\n\
+        \t\t\t\t\t'TC7': {'evsys_channel_22': 'Channel 3'}\\\n\t\t\t\t},\\\n\t\t\t\
+        \t'TCC':{\\\n\t\t\t\t\t'TCC0': {'evsys_channel_4': 'Channel 3'},\\\n\t\t\t\
+        \t\t'TCC1': {'evsys_channel_10': 'Channel 3'},\\\n\t\t\t\t\t'TCC2': {'evsys_channel_14':\
+        \ 'Channel 3'},\\\n\t\t\t\t\t'TCC3': {'evsys_channel_31': 'Channel 3'}\\\n\
+        \t\t\t\t}\\\n               },\\\n'ATSAMDA1' : {\\\n\t\t\t\t'TC':{\\\n\t\t\
+        \t\t\t'TC3': {'evsys_channel_18': 'Channel 3'},\\\n\t\t\t\t\t'TC4': {'evsys_channel_19':\
+        \ 'Channel 3'},\\\n\t\t\t\t\t'TC5': {'evsys_channel_20': 'Channel 3'},\\\n\
+        \t\t\t\t\t'TC6': {'evsys_channel_21': 'Channel 3'},\\\n\t\t\t\t\t'TC7': {'evsys_channel_22':\
+        \ 'Channel 3'}\\\n\t\t\t\t},\\\n\t\t\t\t'TCC':{\\\n\t\t\t\t\t'TCC0': {'evsys_channel_4':\
+        \ 'Channel 3'},\\\n\t\t\t\t\t'TCC1': {'evsys_channel_10': 'Channel 3'},\\\n\
+        \t\t\t\t\t'TCC2': {'evsys_channel_14': 'Channel 3'}\\\n\t\t\t\t}\\\n     \
+        \          },\\\n'ATSAMHA1' : {\\\n\t\t\t\t'TC':{\\\n\t\t\t\t\t'TC3': {'evsys_channel_18':\
+        \ 'Channel 3'},\\\n\t\t\t\t\t'TC4': {'evsys_channel_19': 'Channel 3'},\\\n\
+        \t\t\t\t\t'TC5': {'evsys_channel_20': 'Channel 3'},\\\n\t\t\t\t\t'TC6': {'evsys_channel_21':\
+        \ 'Channel 3'},\\\n\t\t\t\t\t'TC7': {'evsys_channel_22': 'Channel 3'}\\\n\t\
+        \t\t\t},\\\n\t\t\t\t'TCC':{\\\n\t\t\t\t\t'TCC0': {'evsys_channel_4': 'Channel\
+        \ 3'},\\\n\t\t\t\t\t'TCC1': {'evsys_channel_10': 'Channel 3'},\\\n\t\t\t\t\
+        \t'TCC2': {'evsys_channel_14': 'Channel 3'}\\\n\t\t\t\t}\\\n             \
+        \  },\\\n'ATSAME54' : {\\\n\t\t\t\t'TC':{\\\n\t\t\t\t\t'TC0': {'evsys_channel_44':\
+        \ 'Channel 2'},\\\n\t\t\t\t\t'TC1': {'evsys_channel_45': 'Channel 2'},\\\n\
+        \t\t\t\t\t'TC2': {'evsys_channel_46': 'Channel 2'},\\\n\t\t\t\t\t'TC3': {'evsys_channel_47':\
+        \ 'Channel 2'},\\\n\t\t\t\t\t'TC4': {'evsys_channel_48': 'Channel 2'},\\\n\
+        \t\t\t\t\t'TC5': {'evsys_channel_49': 'Channel 2'},\\\n\t\t\t\t\t'TC6': {'evsys_channel_50':\
+        \ 'Channel 2'},\\\n\t\t\t\t\t'TC7': {'evsys_channel_51': 'Channel 2'}\\\n\t\
+        \t\t\t},\\\n\t\t\t\t'TCC':{\\\n\t\t\t\t\t'TCC0': {'evsys_channel_17': 'Channel\
+        \ 2'},\\\n\t\t\t\t\t'TCC1': {'evsys_channel_25': 'Channel 2'},\\\n\t\t\t\t\
+        \t'TCC2': {'evsys_channel_31': 'Channel 2'},\\\n\t\t\t\t\t'TCC3': {'evsys_channel_36':\
+        \ 'Channel 2'},\\\n\t\t\t\t\t'TCC4': {'evsys_channel_40': 'Channel 2'}\\\n\
+        \t\t\t\t}\\\n               },\\\n'ATSAME53' : {\\\n\t\t\t\t'TC':{\\\n\t\t\
+        \t\t\t'TC0': {'evsys_channel_44': 'Channel 2'},\\\n\t\t\t\t\t'TC1': {'evsys_channel_45':\
+        \ 'Channel 2'},\\\n\t\t\t\t\t'TC2': {'evsys_channel_46': 'Channel 2'},\\\n\
+        \t\t\t\t\t'TC3': {'evsys_channel_47': 'Channel 2'},\\\n\t\t\t\t\t'TC4': {'evsys_channel_48':\
+        \ 'Channel 2'},\\\n\t\t\t\t\t'TC5': {'evsys_channel_49': 'Channel 2'},\\\n\
+        \t\t\t\t\t'TC6': {'evsys_channel_50': 'Channel 2'},\\\n\t\t\t\t\t'TC7': {'evsys_channel_51':\
+        \ 'Channel 2'}\\\n\t\t\t\t},\\\n\t\t\t\t'TCC':{\\\n\t\t\t\t\t'TCC0': {'evsys_channel_17':\
+        \ 'Channel 2'},\\\n\t\t\t\t\t'TCC1': {'evsys_channel_25': 'Channel 2'},\\\n\
+        \t\t\t\t\t'TCC2': {'evsys_channel_31': 'Channel 2'},\\\n\t\t\t\t\t'TCC3':\
+        \ {'evsys_channel_36': 'Channel 2'},\\\n\t\t\t\t\t'TCC4': {'evsys_channel_40':\
+        \ 'Channel 2'}\\\n\t\t\t\t}\\\n               },\\\n'ATSAME51' : {\\\n\t\t\
+        \t\t'TC':{\\\n\t\t\t\t\t'TC0': {'evsys_channel_44': 'Channel 2'},\\\n\t\t\t\
+        \t\t'TC1': {'evsys_channel_45': 'Channel 2'},\\\n\t\t\t\t\t'TC2': {'evsys_channel_46':\
+        \ 'Channel 2'},\\\n\t\t\t\t\t'TC3': {'evsys_channel_47': 'Channel 2'},\\\n\
+        \t\t\t\t\t'TC4': {'evsys_channel_48': 'Channel 2'},\\\n\t\t\t\t\t'TC5': {'evsys_channel_49':\
+        \ 'Channel 2'},\\\n\t\t\t\t\t'TC6': {'evsys_channel_50': 'Channel 2'},\\\n\
+        \t\t\t\t\t'TC7': {'evsys_channel_51': 'Channel 2'}\\\n\t\t\t\t},\\\n\t\t\t\
+        \t'TCC':{\\\n\t\t\t\t\t'TCC0': {'evsys_channel_17': 'Channel 2'},\\\n\t\t\t\
+        \t\t'TCC1': {'evsys_channel_25': 'Channel 2'},\\\n\t\t\t\t\t'TCC2': {'evsys_channel_31':\
+        \ 'Channel 2'},\\\n\t\t\t\t\t'TCC3': {'evsys_channel_36': 'Channel 2'},\\\n\
+        \t\t\t\t\t'TCC4': {'evsys_channel_40': 'Channel 2'}\\\n\t\t\t\t}\\\n     \
+        \          },\\\n'ATSAMD51' : {\\\n\t\t\t\t'TC':{\\\n\t\t\t\t\t'TC0': {'evsys_channel_44':\
+        \ 'Channel 2'},\\\n\t\t\t\t\t'TC1': {'evsys_channel_45': 'Channel 2'},\\\n\
+        \t\t\t\t\t'TC2': {'evsys_channel_46': 'Channel 2'},\\\n\t\t\t\t\t'TC3': {'evsys_channel_47':\
+        \ 'Channel 2'},\\\n\t\t\t\t\t'TC4': {'evsys_channel_48': 'Channel 2'},\\\n\
+        \t\t\t\t\t'TC5': {'evsys_channel_49': 'Channel 2'},\\\n\t\t\t\t\t'TC6': {'evsys_channel_50':\
+        \ 'Channel 2'},\\\n\t\t\t\t\t'TC7': {'evsys_channel_51': 'Channel 2'}\\\n\t\
+        \t\t\t},\\\n\t\t\t\t'TCC':{\\\n\t\t\t\t\t'TCC0': {'evsys_channel_17': 'Channel\
+        \ 2'},\\\n\t\t\t\t\t'TCC1': {'evsys_channel_25': 'Channel 2'},\\\n\t\t\t\t\
+        \t'TCC2': {'evsys_channel_31': 'Channel 2'},\\\n\t\t\t\t\t'TCC3': {'evsys_channel_36':\
+        \ 'Channel 2'},\\\n\t\t\t\t\t'TCC4': {'evsys_channel_40': 'Channel 2'}\\\n\
+        \t\t\t\t}\\\n               }\\\n}\\\n}"
+      device_families: "{\\\n\t\t\t\t\t\t\t\t\t\t\t'SAM1' : ['atsamd10', 'atsamd11',\
+        \ 'atsamda1', 'atsamd20', 'atsamd21', 'atsamha1'],\\\n\t\t\t\t\t\t\t\t\t\t\
+        \t'SAM2' : ['atsaml21', 'atsaml22', 'atsaml11', 'atsaml10'],\\\t\n\t\t\t\t\
+        \t\t\t\t\t\t\t'SAM3' : ['atsamc21', 'atsamc20'],\\\n\t\t\t\t\t\t\t\t\t\t\t\
+        'SAM4' : ['atsame51', 'atsame53', 'atsame54', 'atsamd51']\\\t\t\t\t\t\t\t\t\
+        \t\t\t\t\n\t\t\t\t\t\t\t\t\t }"
+      device_low_power_clock_configuration: "{'deviceLowPowerClockSettings': {\\\n\
+        'ATtiny':{ 'sources':[{'32KHz divided by 32':{'clkctrl_mclkctrla_cksel':'32KHz\
+        \ Internal Ultra Low Power Oscillator (OSCULP32K)'}},\\ \n               \
+        \         {'Main Clock (CLK_MAIN)':{'clkctrl_mclkctrla_cksel':'20MHz Internal\
+        \ Oscillator (OSC20M)',\\ \n                                             \
+        \           'clkctrl_mclkctrlb_pdiv':'2',\\ \n                           \
+        \                             'clkctrl_mclkctrlb_pen':false }\\ \n       \
+        \                       },\\ \n                        {'RTC Clock (CLK_RTC)':{'rtc_ctrla_rtcen':true,\\\
+        \ \n                                                      'rtc_clksel_clksel':'32KHz\
+        \ divided by 32',\\ \n                                                   \
+        \   'rtc_ctrla_prescaler':'1'\\ \n                                       \
+        \               }\\\n                              }\\ \n                \
+        \            ],\\ \n                   'modules':[{'Timer':{'RTC':{'currentValue':'RTC\
+        \ Clock (CLK_RTC)'}}},\\ \n                              {'PTC':{'PTC':{'currentValue':'Main\
+        \ Clock (CLK_MAIN)'}}}]\\ \n                 },\\\n'SAM1':{ 'oscillators':[{'32kHz\
+        \ Ultra Low Power Internal Oscillator (OSCULP32K)':{}},\\ \n             \
+        \                   {'8MHz Internal Oscillator (OSC8M)':{'osc8m_presc':'2',\\\
+        \n\t\t\t\t                                     'osc8m_arch_runstdby':true}},\\\
+        \ \n                                {'Digital Frequency Locked Loop (DFLL48M)':{'dfll48m_ref_clock':'Generic\
+        \ clock generator 3',\\ \n\t\t\t\t\t\t\t                    'dfll48m_arch_enable':true,\\\
+        \n                                                                       \
+        \     'dfll48m_mode':'Closed Loop Mode',\\\n                             \
+        \                                               'dfll_arch_cstep':'10',\\\
+        \ \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\
+        \                                                                        \
+        \    'dfll_arch_fstep':'10',\\ \n                                        \
+        \                                    'dfll48m_mul':'1500'\\ \n           \
+        \                                                                 }\\ \n \
+        \                               }\\ \n                               ],\\\
+        \ \n          'sources':[{'Generic clock generator 0':{'gclk_arch_gen_0_enable':true,\\\
+        \ \n                        'gclk_gen_0_oscillator':'Digital Frequency Locked\
+        \ Loop (DFLL48M)',\\ \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n     \
+        \                                                     'gclk_gen_0_div':'1'\\\
+        \ \n                                                          }\\ \n     \
+        \                       },\\ \n                    {'Generic clock generator\
+        \ 1':{'gclk_arch_gen_1_RUNSTDBY':true,\\ \n                              \
+        \                            'gclk_arch_gen_1_enable':true,\\ \n         \
+        \                                                 'gclk_gen_1_oscillator':'32kHz\
+        \ Ultra Low Power Internal Oscillator (OSCULP32K)',\\ \n                 \
+        \                                         'gclk_gen_1_div':'16'\\ \n\t\t\t\
+        \t\t\t\t\t\t\t\t\t\t\t  }\\ \n                    },\\ \n                \
+        \    {'Generic clock generator 2':{'gclk_arch_gen_2_RUNSTDBY':true,\\ \n \
+        \                                                         'gclk_arch_gen_2_enable':true,\\\
+        \n\t\t\t\t\t\t\t  'gclk_gen_2_oscillator':'8MHz Internal Oscillator (OSC8M)',\\\
+        \ \n                                                          'gclk_gen_2_div':'1'\\\
+        \ \n                                                         }\\ \n      \
+        \                      },\\\n                    {'Generic clock generator\
+        \ 3':{'gclk_arch_gen_3_enable':true,\\ \n                                \
+        \                          'gclk_gen_3_oscillator':'8MHz Internal Oscillator\
+        \ (OSC8M)',\\ \n                                                         \
+        \ 'gclk_gen_3_div':'125'\\ \n                                            \
+        \             }\\ \n                            }\\ \t\t\n               \
+        \      ],\\ \n                'modules':[{'PTC':{'PTC':{'currentValue':'Generic\
+        \ clock generator 2'}}},\\ \n                           {'Timer':{'RTC':{'currentValue':'Generic\
+        \ clock generator 1'}}},\\ \n                           {'USART':{'Slow':{'currentValue':'Generic\
+        \ clock generator 1'},\\ \n                                     'Core':{'currentValue':'Generic\
+        \ clock generator 2'}\\ \n                                    }\\ \n     \
+        \                       }\\ \n                          ],\\\n           \
+        \     'systems':[{'CPU':{'nvm_wait_states':'2'}}]\\\n                },\\\n\
+        'SAM2':\t{ 'oscillators':[{'16MHz Internal Oscillator (OSC16M)':{'osc16m_freq':'16'}},{'32kHz\
+        \ Ultra Low Power Internal Oscillator (OSCULP32K)':{'rtc_1khz_selection':true}}],\\\
+        \n                    'sources'  :[{'Generic clock generator 0':{'gclk_gen_0_oscillator':'16MHz\
+        \ Internal Oscillator (OSC16M)',\\ \n                                 'gclk_gen_0_div':'1'}},\\\
+        \ \n                                 {'Generic clock generator 1':{'gclk_gen_1_oscillator':'16MHz\
+        \ Internal Oscillator (OSC16M)',\\ \n                                 'gclk_gen_1_div':'4'}}],\\\
+        \ \n                'modules'      :[{'PTC':{'PTC':{'currentValue':'Generic\
+        \ clock generator 1'}}},\\ \t\t\t\t\t\t\t\t\t\t\t\t\t\t         \n       \
+        \                          {'USART':{'Slow':{'currentValue':'Generic clock\
+        \ generator 2'},\\ \n                                     'Core':{'currentValue':'Generic\
+        \ clock generator 0'}\\ \n                                    }}\\ \n    \
+        \                      ],\\\n                'systems':[{'CPU':{'nvm_wait_states':'2'}}]\\\
+        \ \n                },\\ \n'SAM3':\t{ 'oscillators':[{'48MHz Internal Oscillator\
+        \ (OSC48M)':{'osc48m_div':'0',\\\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\
+        \t\t\t\t'osc48m_arch_ondemand':true,\\\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\
+        \t\t\t\t\t\t\t'osc48m_arch_runstdby':true}},\\\n\t\t\t\t\t\t\t\t\t\t\t\t{'32kHz\
+        \ Ultra Low Power Internal Oscillator (OSCULP32K)':{'rtc_1khz_selection':true}}],\\\
+        \ \n                    'sources'  :[{'Generic clock generator 0':{'gclk_gen_0_oscillator':'48MHz\
+        \ Internal Oscillator (OSC48M)',\\ \n                                 'gclk_gen_0_div':'1'}},\\\
+        \ \n                                 {'Generic clock generator 1':{'gclk_gen_1_oscillator':'48MHz\
+        \ Internal Oscillator (OSC48M)',\\ \n                                 'gclk_gen_1_div':'12',\\\
+        \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 'gclk_arch_gen_1_runstdby':true}}],\\\n\
+        \                'modules'      :[{'PTC':{'PTC':{'currentValue':'Generic clock\
+        \ generator 1'}}},\\ \t\t\t\t\t\t\t\t\t\t\t\t\t\t         \n             \
+        \                    {'USART':{'Slow':{'currentValue':'Generic clock generator\
+        \ 2'},\\ \n                                     'Core':{'currentValue':'Generic\
+        \ clock generator 1'}\\ \n                                    }}\\ \n    \
+        \                      ],\\\n                'systems':[{'CPU':{'nvm_wait_states':'2'}}]\\\
+        \ \n                }\\ \n}}"
+      device_tc_configuration_ds: "{'deviceTCSettingsDS': {\\\n'ATSAMD20' : { 'ctrla_control':\
+        \ true ,'ctrla_enable': true, 'ctrla_wavegen': 'NPWM',\\\n               'evctrl_control':\
+        \ true, 'evctrl_tcei': true, 'evctrl_evact: 'START', \\\n\t\t\t   'ctrla_runstdby':\
+        \ true, 'tc_gclk_selection': 'Generic clock generator 2' \\\n            \
+        \   },\\\n'ATSAMD21' : { 'ctrla_control': true ,'ctrla_enable': true, 'ctrla_wavegen':\
+        \ 'NPWM',\\\n               'evctrl_control': true, 'evctrl_tcei': true, 'evctrl_evact:\
+        \ 'START', \\\n\t\t\t   'ctrla_runstdby': true, 'tc_gclk_selection': 'Generic\
+        \ clock generator 2' \\\n               },\\\n'ATSAMDA1' : { 'ctrla_control':\
+        \ true ,'ctrla_enable': true, 'ctrla_wavegen': 'NPWM',\\\n               'evctrl_control':\
+        \ true, 'evctrl_tcei': true, 'evctrl_evact: 'START', \\\n\t\t\t   'ctrla_runstdby':\
+        \ true, 'tc_gclk_selection': 'Generic clock generator 2' \\\n            \
+        \   },\\\n'ATSAMHA1' : { 'ctrla_control': true ,'ctrla_enable': true, 'ctrla_wavegen':\
+        \ 'NPWM',\\\n               'evctrl_control': true, 'evctrl_tcei': true, 'evctrl_evact:\
+        \ 'START', \\\n\t\t\t   'ctrla_runstdby': true, 'tc_gclk_selection': 'Generic\
+        \ clock generator 2' \\\n               },\\\n'ATSAMC20' : { 'ctrla_control':\
+        \ true ,'ctrla_enable': true, 'ctrla_wavegen': 'NPWM',\\\n               'evctrl_control':\
+        \ true, 'evctrl_tcei': true, 'evctrl_evact: 'START', \\\n\t\t\t   'ctrla_runstdby':\
+        \ true, 'tc_gclk_selection': 'Generic clock generator 1' \\\n            \
+        \   },\\\n'ATSAMC21' : { 'ctrla_control': true ,'ctrla_enable': true, 'ctrla_wavegen':\
+        \ 'NPWM',\\\n               'evctrl_control': true, 'evctrl_tcei': true, 'evctrl_evact:\
+        \ 'START'\\\n\t\t\t   'ctrla_runstdby': true, 'tc_gclk_selection': 'Generic\
+        \ clock generator 1' \\\n               },\\\n'ATSAML21' : { 'ctrla_control':\
+        \ true ,'ctrla_enable': true, 'ctrla_wavegen': 'NPWM',\\\n               'evctrl_control':\
+        \ true, 'evctrl_tcei': true, 'evctrl_evact: 'START', \\\n\t\t\t   'ctrla_runstdby':\
+        \ true, 'tc_gclk_selection': 'Generic clock generator 1' \\\n            \
+        \   },\\\n'ATSAML22' : { 'ctrla_control': true ,'ctrla_enable': true, 'ctrla_wavegen':\
+        \ 'NPWM',\\\n               'evctrl_control': true, 'evctrl_tcei': true, 'evctrl_evact:\
+        \ 'START'\\\n\t\t\t   'ctrla_runstdby': true, 'tc_gclk_selection': 'Generic\
+        \ clock generator 1' \\\n               },\\\n'ATSAME54' : { 'ctrla_control':\
+        \ true ,'ctrla_enable': true, 'ctrla_wavegen': 'NPWM',\\\n               'evctrl_control':\
+        \ true, 'evctrl_tcei': true, 'evctrl_evact: 'START'\\\n\t\t\t   'ctrla_runstdby':\
+        \ true, 'tc_gclk_selection': 'Generic clock generator 1' \\\n            \
+        \   },\\\n'ATSAME53' : { 'ctrla_control': true ,'ctrla_enable': true, 'ctrla_wavegen':\
+        \ 'NPWM',\\\n               'evctrl_control': true, 'evctrl_tcei': true, 'evctrl_evact:\
+        \ 'START'\\\n\t\t\t   'ctrla_runstdby': true, 'tc_gclk_selection': 'Generic\
+        \ clock generator 1' \\\n               },\\\n'ATSAME51' : { 'ctrla_control':\
+        \ true ,'ctrla_enable': true, 'ctrla_wavegen': 'NPWM',\\\n               'evctrl_control':\
+        \ true, 'evctrl_tcei': true, 'evctrl_evact: 'START'\\\n\t\t\t   'ctrla_runstdby':\
+        \ true, 'tc_gclk_selection': 'Generic clock generator 1' \\\n            \
+        \   },\\\n'ATSAMD51' : { 'ctrla_control': true ,'ctrla_enable': true, 'ctrla_wavegen':\
+        \ 'NPWM',\\\n               'evctrl_control': true, 'evctrl_tcei': true, 'evctrl_evact:\
+        \ 'START'\\\n\t\t\t   'ctrla_runstdby': true, 'tc_gclk_selection': 'Generic\
+        \ clock generator 1' \\\n               }\\\n}\\\n}"
+      device_tcc_configuration_ds: "{'deviceTCCSettingsDS': {\\\n'ATSAMD20' : { 'ctrla_control':\
+        \ true ,'ctrla_enable': true, \\\n               'evctrl_control': true, 'evctrl_tcei0':\
+        \ true, 'evctrl_evact0: 'START', \\\n               'wave_control': true,\
+        \ 'wave_wavegen': 'NPWM', \\\n\t\t\t   'ctrla_runstdby': true, 'tcc_gclk_selection':\
+        \ 'Generic clock generator 2' \\\n\t\t\t   },\\\n'ATSAMD21' : { 'ctrla_control':\
+        \ true ,'ctrla_enable': true, \\\n               'evctrl_control': true, 'evctrl_tcei0':\
+        \ true, 'evctrl_evact0: 'START', \\\n               'wave_control': true,\
+        \ 'wave_wavegen': 'NPWM', \\\n\t\t\t   'ctrla_runstdby': true, 'tcc_gclk_selection':\
+        \ 'Generic clock generator 2' \\\n               },\\\n'ATSAMDA1' : { 'ctrla_control':\
+        \ true ,'ctrla_enable': true, \\\n               'evctrl_control': true, 'evctrl_tcei0':\
+        \ true, 'evctrl_evact0: 'START', \\\n               'wave_control': true,\
+        \ 'wave_wavegen': 'NPWM', \\\n\t\t\t   'ctrla_runstdby': true, 'tcc_gclk_selection':\
+        \ 'Generic clock generator 2' \\\n               },\\\n'ATSAMHA1' : { 'ctrla_control':\
+        \ true ,'ctrla_enable': true, \\\n               'evctrl_control': true, 'evctrl_tcei0':\
+        \ true, 'evctrl_evact0: 'START', \\\n               'wave_control': true,\
+        \ 'wave_wavegen': 'NPWM', \\\n\t\t\t   'ctrla_runstdby': true, 'tcc_gclk_selection':\
+        \ 'Generic clock generator 2' \\\n               },\\\n'ATSAMC20' : { 'ctrla_control':\
+        \ true ,'ctrla_enable': true, \\\n               'evctrl_control': true, 'evctrl_tcei0':\
+        \ true, 'evctrl_evact0: 'START', \\\n               'wave_control': true,\
+        \ 'wave_wavegen': 'NPWM', \\\n\t\t\t   'ctrla_runstdby': true, 'tcc_gclk_selection':\
+        \ 'Generic clock generator 1' \\\n               },\\\n'ATSAMC21' : { 'ctrla_control':\
+        \ true ,'ctrla_enable': true, \\\n               'evctrl_control': true, 'evctrl_tcei0':\
+        \ true, 'evctrl_evact0: 'START', \\\n               'wave_control': true,\
+        \ 'wave_wavegen': 'NPWM', \\\n\t\t\t   'ctrla_runstdby': true, 'tcc_gclk_selection':\
+        \ 'Generic clock generator 1' \\\n               },\\\n'ATSAML21' : { 'ctrla_control':\
+        \ true ,'ctrla_enable': true, \\\n               'evctrl_control': true, 'evctrl_tcei0':\
+        \ true, 'evctrl_evact0: 'START', \\\n               'wave_control': true,\
+        \ 'wave_wavegen': 'NPWM', \\\n\t\t\t   'ctrla_runstdby': true, 'tcc_gclk_selection':\
+        \ 'Generic clock generator 1' \\\n               },\\\n'ATSAML22' : { 'ctrla_control':\
+        \ true ,'ctrla_enable': true, \\\n               'evctrl_control': true, 'evctrl_tcei0':\
+        \ false, 'evctrl_evact0: 'START', \\\n               'wave_control': true,\
+        \ 'wave_wavegen': 'NPWM', \\\n\t\t\t   'ctrla_runstdby': true, 'tcc_gclk_selection':\
+        \ 'Generic clock generator 1' \\\n               },\\\n'ATSAME54' : { 'ctrla_control':\
+        \ true ,'ctrla_enable': true, \\\n\t\t\t   'evctrl_control': true, 'evctrl_tcei0':\
+        \ false, 'evctrl_evact0: 'START', \\\n\t\t\t   'wave_control': true, 'wave_wavegen':\
+        \ 'NPWM', \\\n\t\t\t   'ctrla_runstdby': true, 'tcc_gclk_selection': 'Generic\
+        \ clock generator 1' \\\n\t\t\t\t},\\\n'ATSAME53' : { 'ctrla_control': true\
+        \ ,'ctrla_enable': true, \\\n\t\t\t   'evctrl_control': true, 'evctrl_tcei0':\
+        \ false, 'evctrl_evact0: 'START', \\\n\t\t\t   'wave_control': true, 'wave_wavegen':\
+        \ 'NPWM', \\\n\t\t\t   'ctrla_runstdby': true, 'tcc_gclk_selection': 'Generic\
+        \ clock generator 1' \\\n\t\t\t\t},\\\n'ATSAME51' : { 'ctrla_control': true\
+        \ ,'ctrla_enable': true, \\\n\t\t\t   'evctrl_control': true, 'evctrl_tcei0':\
+        \ false, 'evctrl_evact0: 'START', \\\n\t\t\t   'wave_control': true, 'wave_wavegen':\
+        \ 'NPWM', \\\n\t\t\t   'ctrla_runstdby': true, 'tcc_gclk_selection': 'Generic\
+        \ clock generator 1' \\\n\t\t\t\t},\\\n'ATSAMD51' : { 'ctrla_control': true\
+        \ ,'ctrla_enable': true, \\\n\t\t\t   'evctrl_control': true, 'evctrl_tcei0':\
+        \ false, 'evctrl_evact0: 'START', \\\n\t\t\t   'wave_control': true, 'wave_wavegen':\
+        \ 'NPWM', \\\n\t\t\t   'ctrla_runstdby': true, 'tcc_gclk_selection': 'Generic\
+        \ clock generator 1' \\\n\t\t\t\t}\\\n}\\\n}"
+      device_timer_configuration: "{'deviceTimerSettings': {\\\n'ATSAML10' : { 'rtc_event_control':\
+        \ true ,\\\n                'rtc_pereo0': true,\\\n                'rtc_arch_comp_val':'1'\\\
+        \n               },\\\n'ATSAML11' : { 'rtc_event_control': true ,\\\n    \
+        \            'rtc_pereo0': true,\\\n                'rtc_arch_comp_val':'1'\\\
+        \n\t\t},\\\n'ATSAMD20' : { 'rtc_event_control': true ,\\\n               'rtc_pereo4':\
+        \ true,\\\n               'rtc_arch_comp_val':'32'\\\n               },\\\n\
+        'ATSAMD21' : { 'rtc_event_control': true ,\\\n     \t\t\t'rtc_pereo4': true,\\\
+        \n\t\t\t\t'rtc_arch_comp_val':'32'\\\n\t\t\t\t},\\\n'ATSAMDA1' : { 'rtc_event_control':\
+        \ true ,\\\n\t\t\t\t'rtc_pereo4': true,\\\n\t\t\t\t'rtc_arch_comp_val':'32'\\\
+        \n\t\t\t\t},\\\n'ATSAMHA1' : { 'rtc_event_control': true ,\\\n\t\t\t\t'rtc_pereo4':\
+        \ true,\\\n\t\t\t\t'rtc_arch_comp_val':'32'\\\n\t\t\t\t},\\\n'ATSAMC20' :\
+        \ { 'rtc_event_control': true ,\\\n\t\t\t\t'rtc_pereo4': true,\\\n\t\t\t\t\
+        'rtc_arch_comp_val':'32'\\\n\t\t\t\t},\\\n'ATSAMC21' : { 'rtc_event_control':\
+        \ true ,\\\n\t\t\t\t'rtc_pereo4': true,\\\n\t\t\t\t'rtc_arch_comp_val':'32'\\\
+        \n\t\t\t\t},\\\n'ATSAML21' : { 'rtc_event_control': true ,\\\n\t\t\t\t'rtc_pereo4':\
+        \ true,\\\n\t\t\t\t'rtc_arch_comp_val':'32'\\\n\t\t\t\t},\\\n'ATSAML22' :\
+        \ { 'rtc_event_control': true ,\\\n\t\t\t\t'rtc_pereo4': true,\\\n\t\t\t\t\
+        'rtc_arch_comp_val':'32'\\\n\t\t\t\t}\\\n}\\\n}"
+      driven_shield_devices: "{\\\n\t\t\t\t\t\t\t\t\t\t'drivenShieldDevices': ['attiny1617',\
+        \ 'attiny1616', 'attiny1614', 'attiny817', 'attiny814', 'attiny816', 'attiny3217',\
+        \ 'attiny3216', 'attiny3214',\\\n\t\t\t\t\t\t\t\t\t\t'atsaml10', 'atsaml11']\\\
+        \n\t\t\t\t\t\t\t\t\t}"
+      gcc_supported_devices: "{\\\n\t\t\t\t\t\t\t\t\t\t'gccSupportedDevices': ['attiny814',\
+        \ 'attiny816', 'attiny817']\\\n\t\t\t\t\t\t\t\t\t}"
+      low_power_devices: "{\\\n\t\t\t\t\t\t\t\t\t\t'lowPowerDevices': ['attiny814','attiny816','attiny817','attiny1614','attiny1616','attiny1617','attiny3214','attiny3216','attiny3217','atsaml10',\
+        \ 'atsaml11','atsamd20', 'atsamd21', 'atsamda1','atsamha1']\\\n\t\t\t\t\t\t\
+        \t\t}"
+      max_sensor_count: "{\\\n\t\t\t\t\t\t\t\t'deviceComment':'[device, selfcap, mutualcap,\
+        \ lumpcount]',\\\n\t\t\t\t\t\t\t\t'deviceButtonCount': [\\\n\t\t\t\t\t\t\t\
+        \t\t['ATmega324PB', 32, 55,0,16,0,16], ['ATmega328PB', 24, 55,0,8,0,16],\\\
+        \n\t\t\t\t\t\t\t\t\t['ATtiny1614', 6, 9,25,0,0,6], ['ATtiny1616', 12, 36,52,0,0,12],\
+        \ ['ATtiny1617', 14, 49,65,0,0,14],\\ \n\t\t\t\t\t\t\t\t\t['ATtiny814', 6,\
+        \ 9,17], ['ATtiny816', 6, 9,17], ['ATtiny817', 6, 9,17],\\\n\t\t\t\t\t\t\t\
+        \t\t['ATSAMD10D14AM', 16, 72,0,6,1,10], ['ATSAMD10C14A', 7, 12,0,3,0,4],\\\
+        \n\t\t\t\t\t\t\t\t\t['ATSAMD10D14AS', 13, 42,0,6,0,7], ['ATSAMD10D14AU', 13,\
+        \ 42,0,6,0,7],\\\n\t\t\t\t\t\t\t\t\t['ATSAMD11D14AM', 16, 72,0,6,1,10], ['ATSAMD11C14A',\
+        \ 7, 12,0,3,0,4],\\\n\t\t\t\t\t\t\t\t\t['ATSAMD11D14AS', 13, 42,0,6,0,7],\
+        \ ['ATSAMD11D14AU', 13, 42,0,6,0,7],\\\n\t\t\t\t\t\t\t\t\t['ATSAMD20E14',\
+        \ 6, 48,0,6,10,0], ['ATSAMD20D16U', 16, 130,0,6,10,0],\\\n\t\t\t\t\t\t\t\t\
+        \t['ATSAMD20G14', 10, 48,0,10,12,0], ['ATSAMD20D15U', 16, 60,0],\\\n\t\t\t\
+        \t\t\t\t\t\t['ATSAMD20J14', 16, 48,0,16,16,0],\\\n\t\t\t\t\t\t\t\t\t['ATSAMD21E15L',\
+        \ 16, 256,0,6,10,0], ['ATSAMD21E16A', 16, 256,0,6,10,0],\\\n\t\t\t\t\t\t\t\
+        \t\t['ATSAMD21E16B', 16, 256,0,6,10,0], ['ATSAMD21E16BU', 16, 256,0,6,10,0],\\\
+        \n\t\t\t\t\t\t\t\t\t['ATSAMD21E16L', 16, 256,0,6,10,0], ['ATSAMD21E16CU',\
+        \ 16, 256,0,6,10,0],\\\n\t\t\t\t\t\t\t\t\t['ATSAMD21G15L', 16, 256,0,10,12,0],\\\
+        \n\t\t\t\t\t\t\t\t\t['ATSAMD21G16L', 16, 256,0,10,12,0],\\\n\t\t\t\t\t\t\t\
+        \t\t['ATSAMD51G18A', 22, 121,0,0,0,22], ['ATSAMD51G19A', 22, 121,0,0,0,22],\\\
+        \n\t\t\t\t\t\t\t\t\t['ATSAMD51J18A', 32, 256,0,0,0,32], ['ATSAMD51J19A', 32,\
+        \ 256,0,0,0,32],\\\n\t\t\t\t\t\t\t\t\t['ATSAMD51J20A', 32, 256,0,0,0,32],\
+        \ ['ATSAMD51N19A', 32, 256,0,0,0,32],\\\n\t\t\t\t\t\t\t\t\t['ATSAMD51N20A',\
+        \ 32, 256,0,0,0,32], ['ATSAMD51P19A', 32, 256,0,0,0,32], ['ATSAMD51P20A',\
+        \ 32, 256,0,0,0,32],\\\n\t\t\t\t\t\t\t\t\t['ATSAME51J18A', 32, 256,0,0,0,32],\
+        \ ['ATSAME51J19A', 32, 256,0,0,0,32],\\\n\t\t\t\t\t\t\t\t\t['ATSAME51N19A',\
+        \ 32, 256,0,0,0,32], ['ATSAME51N20A', 32, 256,0,0,0,32],\\\n\t\t\t\t\t\t\t\
+        \t\t['ATSAME53J18A', 32, 256,0,0,0,32], ['ATSAME53J19A', 32, 256,0,0,0,32],\\\
+        \n\t\t\t\t\t\t\t\t\t['ATSAME53N19A', 32, 256,0,0,0,32], ['ATSAME53N20A', 32,\
+        \ 256,0,0,0,32],\\\n\t\t\t\t\t\t\t\t\t['ATSAME54N19A', 32, 256,0,0,0,32],\
+        \ ['ATSAME54N20A', 32, 256,0,0,0,32],\\\n\t\t\t\t\t\t\t\t\t['ATSAME54P19A',\
+        \ 32, 256,0,0,0,32], ['ATSAME54P20A', 32, 256,0,0,0,32],\\\n\t\t\t\t\t\t\t\
+        \t\t['ATSAMD20E15', 6, 60,0,6,10,0], ['ATSAMD20E18', 6, 60,0,6,10,0],\\\n\t\
+        \t\t\t\t\t\t\t\t['ATSAMD20E16', 6, 60,0,6,10,0], ['ATSAMD20E17', 6, 60,0,6,10,0],\\\
+        \n\t\t\t\t\t\t\t\t\t['ATSAMD20G16', 10, 120,0,10,12,0], ['ATSAMD20G18U', 10,\
+        \ 120,0,10,12,0], ['ATSAMD20G15', 10, 60,0,10,12,0],\\\n\t\t\t\t\t\t\t\t\t\
+        ['ATSAMD20G17', 10, 120,0,12,10,0], ['ATSAMD20G17U', 10, 120,0,10,12,0], ['ATSAMD20G18',\
+        \ 10, 120,0,10,12,0],\\\n\t\t\t\t\t\t\t\t\t['ATSAMD20J15', 16, 60,0,16,16,0],\
+        \ ['ATSAMD20J16', 16, 130,0,16,16,0],\\\n\t\t\t\t\t\t\t\t\t['ATSAMD20J17',\
+        \ 16, 256,0,16,16,0], ['ATSAMD20J18', 16, 256,0,16,16,0],\\\n\t\t\t\t\t\t\t\
+        \t\t['ATSAMD21E15A', 6, 60,0,6,10,0], ['ATSAMD21E15B', 6, 60,0,6,10,0], ['ATSAMD21E15BU',\
+        \ 6, 60,0,6,10,0],\\\n\t\t\t\t\t\t\t\t\t['ATSAMD21E17A', 6, 60,0,6,10,0],\
+        \ ['ATSAMD21E18A', 6, 60,0,6,10,0], ['ATSAMD21E15CU', 6, 60,0,6,10,0],\\\n\
+        \t\t\t\t\t\t\t\t\t['ATSAMD21J17A', 16, 256,0,16,16,0], ['ATSAMD21J16A', 16,\
+        \ 130,0,16,16,0], ['ATSAMD21J15A', 16, 60,0,16,16,0],\\\n\t\t\t\t\t\t\t\t\t\
+        ['ATSAMD21J18A', 16, 256,0,16,16,0], ['ATSAMD21J16B', 16, 130,0,16,16,0],\
+        \ ['ATSAMD21J15B', 16, 60,0,16,16,0],\\\n\t\t\t\t\t\t\t\t\t['ATSAMDA1E14A',\
+        \ 6, 60,0,6,10,0], ['ATSAMDA1E15A', 6, 60,0,6,10,0], ['ATSAMDA1E16A', 6, 60,0,6,10,0],\\\
+        \n\t\t\t\t\t\t\t\t\t['ATSAMDA1E14B', 6, 60,0,6,10,0], ['ATSAMDA1E15B', 6,\
+        \ 60,0,6,10,0], ['ATSAMDA1E16B', 6, 60,0,6,10,0],\\\n\t\t\t\t\t\t\t\t\t['ATSAMDA1G14A',\
+        \ 10, 60,0,10,12,0], ['ATSAMDA1G15A', 10, 60,0,10,12,0], ['ATSAMDA1G16A',\
+        \ 10, 130,0,10,12,0],\\\n\t\t\t\t\t\t\t\t\t['ATSAMDA1G14B', 10, 60,0,10,12,0],\
+        \ ['ATSAMDA1G15B', 10, 60,0,10,12,0], ['ATSAMDA1G16B', 10, 130,0,10,12,0],\\\
+        \n\t\t\t\t\t\t\t\t\t['ATSAMDA1J14A', 16, 60,0,16,16,0], ['ATSAMDA1J15A', 16,\
+        \ 60,0,16,16,0], ['ATSAMDA1J16A', 16, 130,0,16,16,0],\\\n\t\t\t\t\t\t\t\t\t\
+        ['ATSAMDA1J14B', 16, 60,0,16,16,0], ['ATSAMDA1J15B', 16, 60,0,16,16,0], ['ATSAMDA1J16B',\
+        \ 16, 130,0,16,16,0],\\\n\t\t\t\t\t\t\t\t\t['ATSAMD21G15A', 10, 60,0,10,12,0],\
+        \ ['ATSAMD21G15B', 10, 60,0,10,12,0],\\\n\t\t\t\t\t\t\t\t\t['ATSAMD21G16A',\
+        \ 10, 120,0,10,12,0], ['ATSAMD21G16B', 10, 120,0,10,12,0],\\\n\t\t\t\t\t\t\
+        \t\t\t['ATSAMD21G17A', 10, 120,0,10,12,0], ['ATSAMD21G17AU', 10, 120,0,10,12,0],\\\
+        \n\t\t\t\t\t\t\t\t\t['ATSAMD21G18A', 10, 120,0,10,12,0], ['ATSAMD21G18AU',\
+        \ 10, 120,0,10,12,0],\\\n\t\t\t\t\t\t\t\t\t['ATSAMC21E15A', 16, 64,0, 6, 0,\
+        \ 10], ['ATSAMC21E16A', 16, 64,0, 6, 0, 10],\\\n\t\t\t\t\t\t\t\t\t['ATSAMC21E17A',\
+        \ 16, 64,0, 6, 0, 10], ['ATSAMC21E18A', 16, 64,0, 6, 0, 10],\\\n\t\t\t\t\t\
+        \t\t\t\t['ATSAMC21G15A', 22, 121,0,10,0,12], ['ATSAMC21G16A', 22, 121,0,10,0,12],\\\
+        \n\t\t\t\t\t\t\t\t\t['ATSAMC21G17A', 22, 121,0,10,0,12], ['ATSAMC21G18A',\
+        \ 22, 121,0,10,0,12],\\\n\t\t\t\t\t\t\t\t\t['ATSAMC21J15A', 32, 60,0,16,0,16],\
+        \ ['ATSAMC21J16A', 32, 256,0,16,0,16], ['ATSAMC21J17A', 32, 256,0,16,0,16],\\\
+        \n\t\t\t\t\t\t\t\t\t['ATSAMC21J17AU', 32, 256,0,16,0,16], ['ATSAMC21J18A',\
+        \ 32, 256,0,16,0,16], ['ATSAMC21J18AU', 32, 256,0,16,0,16],\\\n\t\t\t\t\t\t\
+        \t\t\t['ATSAMC21N17A', 32, 256,0,16,0,16], ['ATSAMC21N18A', 32, 256,0,16,0,16],\\\
+        \n\t\t\t\t\t\t\t\t\t['ATSAMC20E15A', 16, 64, 0, 6, 0, 10], ['ATSAMC20E16A',\
+        \ 16, 64,0, 6, 0, 10],\\\n\t\t\t\t\t\t\t\t\t['ATSAMC20E17A', 16, 64,0, 6,\
+        \ 0, 10], ['ATSAMC20E18A', 16, 64,0, 6, 0, 10],\\\n\t\t\t\t\t\t\t\t\t['ATSAMC20G15A',\
+        \ 22, 121,0,10,0,12], ['ATSAMC20G16A', 22, 121,0,10,0,12],\\\n\t\t\t\t\t\t\
+        \t\t\t['ATSAMC20G17A', 22, 121,0,10,0,12], ['ATSAMC20G18A', 22, 121,0,10,0,12],\\\
+        \n\t\t\t\t\t\t\t\t\t['ATSAMC20J15A', 32, 60,0,16,0,16], ['ATSAMC20J16A', 32,\
+        \ 256,0,16,0,16], ['ATSAMC20J17A', 32, 256,0,16,0,16],\\\n\t\t\t\t\t\t\t\t\
+        \t['ATSAMC20J17AU', 32, 256,0,16,0,16], ['ATSAMC20J18A', 32, 256,0,16,0,16],\
+        \ ['ATSAMC20J18AU', 32, 256,0,16,0,16],\\\n\t\t\t\t\t\t\t\t\t['ATSAMC20N17A',\
+        \ 32, 256,0,16,0,16], ['ATSAMC20N18A', 32, 256,0,16,0,16],\\\n\t\t\t\t\t\t\
+        \t\t\t['ATSAML21E15B', 7, 42,0,3,6,4], ['ATSAML21E16B', 7, 42,0,3,6,4],\\\n\
+        \t\t\t\t\t\t\t\t\t['ATSAML21E17B', 7, 42,0,3,6,4], ['ATSAML21E18B', 7, 42,0,3,6,4],\\\
+        \n\t\t\t\t\t\t\t\t\t['ATSAML21G16B', 10, 81,0,6,8,4], ['ATSAML21G17B', 10,\
+        \ 81,0,6,8,4], ['ATSAML21G18B', 10, 81,0,6,8,4],\\\n\t\t\t\t\t\t\t\t\t['ATSAML21J16B',\
+        \ 16, 169,0,10,10,6], ['ATSAML21J17B', 16, 169,0,10,10,6], ['ATSAML21J18B',\
+        \ 16, 169,0,10,10,6],['ATSAML21J18BU', 16, 169,0,10,10,6],\\\n\t\t\t\t\t\t\
+        \t\t\t['ATSAML22G16A', 15, 132,0,0,8,15], ['ATSAML22G17A', 15, 132,0,0,8,15],\
+        \ ['ATSAML22G18A', 15, 132,0,0,8,15],\\\n\t\t\t\t\t\t\t\t\t['ATSAML22J16A',\
+        \ 19, 182,0,0,8,19], ['ATSAML22J17A', 19, 182,0,0,0,8,19], ['ATSAML22J18A',\
+        \ 19, 182,0,0,0,8,19],\\\n\t\t\t\t\t\t\t\t\t['ATSAML22N16A', 24, 256,0,0,8,24],\
+        \ ['ATSAML22N17A', 24, 256,0,0,8,24], ['ATSAML22N18A', 24, 256,0,0,8,24],\\\
+        \n\t\t\t\t\t\t\t\t\t['ATSAMHA1G14A', 9, 90,0,9,10,0], ['ATSAMHA1G14AB', 9,\
+        \ 90,0,9,10,0],\\\n\t\t\t\t\t\t\t\t\t['ATSAMHA1G15A', 9, 90,0,9,10,0], ['ATSAMHA1G15AB',\
+        \ 9, 90,0,9,10,0],\\\n\t\t\t\t\t\t\t\t\t['ATSAMHA1G16A', 9, 90,0,9,10,0],\
+        \ ['ATSAMHA1G16AB', 9, 90,0,9,10,0],\\\n\t\t\t\t\t\t\t\t\t['ATtiny3214', 6,\
+        \ 9,25,0,0,6], ['ATtiny3216', 12, 36,520,0,12], ['ATtiny3217', 14, 49,65,0,0,14],\\\
+        \n\t\t\t\t\t\t\t\t\t['ATSAML11D14A', 16, 64,80,0,0,16], ['ATSAML11D15A', 16,\
+        \ 64,80,0,0,16], ['ATSAML11D16A', 16, 64,80,0,0,16],\\\n\t\t\t\t\t\t\t\t\t\
+        ['ATSAML11E14A', 20, 100,116,0,0,20], ['ATSAML11E15A', 20, 100,116,0,0,20],\
+        \ ['ATSAML11E16A', 20, 100,116,0,0,20],\\\n\t\t\t\t\t\t\t\t\t['ATSAML10D14A',\
+        \ 16, 64,80,0,0,16], ['ATSAML10D15A', 16, 64,80,0,0,16], ['ATSAML10D16A',\
+        \ 16, 64,80,0,0,16],\\\n\t\t\t\t\t\t\t\t\t['ATSAML10E14A', 20, 100,116,0,0,20],\
+        \ ['ATSAML10E15A', 20, 100,116,0,0,20], ['ATSAML10E16A', 20, 100,116, 0, 0,\
+        \ 20],\\\n\t\t\t\t\t\t\t\t\t['ATSAMHA1E14AB', 4, 28,0,4,7,0],['ATSAMHA1E15AB',\
+        \ 4, 28,0,4,7,0],['ATSAMHA1E16AB', 4, 28,0,4,7,0],\\\n\t\t\t\t\t\t\t\t\t['ATSAMD20E15B',\
+        \ 6, 60,0,6,10,0], ['ATSAMD20E14B', 6, 48,0,6,10,0], ['ATSAMD20E16B', 6, 60,0,6,10,0],\\\
+        \n\t\t\t\t\t\t\t\t\t['ATSAMD20G14B', 10, 48,0,10,12,0], ['ATSAMD20G15B', 10,\
+        \ 60,0,10,12,0], ['ATSAMD20G16B', 10, 120,0,10,12,0],\\\n\t\t\t\t\t\t\t\t\t\
+        ['ATSAMD20J14B', 16, 48,0,16,16,0], ['ATSAMD20J15B', 16, 60,0,16,16,0], ['ATSAMD20J16B',\
+        \ 16, 130,0,16,16,0],\\\n\t\t\t\t\t\t\t\t\t['ATSAMD21E17D', 6, 60,0,6,10,0],\
+        \ ['ATSAMD21E17DU', 6, 60,0,6,10,0],\\\n\t\t\t\t\t\t\t\t\t['ATSAMD21G17D',\
+        \ 10, 120,0,10,12,0], ['ATSAMD21J17D', 16, 256,0,16,16,0]\\\n\t\t\t\t\t\t\t\
+        \t]\\\n\t\t\t\t\t\t\t}"
+      parallel_acquisition_devices: "{\\\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t'parallelAcquisitionDevices':\
+        \ ['attiny1617', 'attiny1616', 'attiny1614', 'attiny3217', 'attiny3216', 'attiny3214',\\\
+        \n\t\t\t\t\t\t\t\t\t\t'atsaml10', 'atsaml11']\\\n\t\t\t\t\t\t\t}"
+      sam_csd_devices: "{\\\n\t\t\t\t\t\t\t\t'samCSDsupportedDevices': [['atsamd51',\
+        \ 63], ['atsame51', 63], ['atsame53', 63], ['atsame54', 63], ['atsaml22',\
+        \ 255], ['atsamc21', 255],\\\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t['atsamc20', 255],\
+        \ ['atsaml10', 255], ['atsaml11', 255], ['atmega328pb', 255], ['atmega324pb',\
+        \ 255], ['attiny', 31]]\\\n\t\t\t\t\t\t\t}"
+      soft_shield_devices: "{\\\n\t\t\t\t\t\t'softShieldDevices': ['atsamd21','atsamda1','atsamha1','atsamc20',\
+        \ 'atsamc21', 'atsaml21', 'atsaml22', 'atsame51', 'atsame53', 'atsame54',\
+        \ 'atsamd51']\\\n\t\t\t\t\t\t\t\t\t}"
+      surface_device_support: "{\\\n\t\t\t\t\t\t\t\t\t\t'surfaceDeviceSupport': ['attiny3217',\
+        \ 'attiny3216', 'attiny3214', 'attiny1617', 'attiny1616', 'attiny1614', \\\
+        \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t'atsamd10', 'atsamd11', 'atsamd20','atsamd21',\
+        \ 'atsamda1','atsamha1',\\\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t'atsaml10', 'atsaml11','atsaml21',\
+        \ 'atsaml22',\\\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t'atsamc20', 'atsamc21',\\\n\t\
+        \t\t\t\t\t\t\t\t\t\t\t\t\t'atsame51', 'atsame53', 'atsame54', 'atsamd51',\\\
+        \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t'atmega324pb', 'atmega328pb']\\\n\t\t\t\t\t\t\
+        \t\t\t}"
+      two_adc_devices: "{\\\n\t\t\t\t\t\t\t\t'twoADCDevices': ['atsame51j18a', 'atsame51j19a',\
+        \ 'atsame51n19a', 'atsame51n20a',\\\n\t\t\t\t\t\t\t\t\t\t\t\t\t'atsame53j18a',\
+        \ 'atsame53j19a', 'atsame53n19a', 'atsame53n20a',\\\n\t\t\t\t\t\t\t\t\t\t\t\
+        \t\t'atsame54n19a', 'atsame54n20a', 'atsame54p19a', 'atsame54p20a',\\\n\t\t\
+        \t\t\t\t\t\t\t\t\t\t\t'atsamd51g18a', 'atsamd51g19a', 'atsamd51j18a', 'atsamd51j19a',\
+        \ 'atsamd51j20a', 'atsamd51n19a', 'atsamd51n20a', 'atsamd51p19a', 'atsamd51p20a']\\\
+        \n\t\t\t\t\t\t\t}"
+      version_details: "{\\\n\t\t\t\t\t\t\t\t'versions': [\\\n\t\t\t\t\t\t\t\t\t['Keys',\
+        \ '1.3'], ['Binding Layer', '1.4'], ['Scroller', '1.0'],\\\n\t\t\t\t\t\t\t\
+        \t\t['Frequency Hop Manual', '1.0'], ['Frequency Hop Autotune', '1.1'],\\\n\
+        \t\t\t\t\t\t\t\t\t['Surface 1 Finger Touch', '1.4'],['Surface 2 Finger Touch',\
+        \ '1.0'], ['Gesture', '1.1']\\\n\t\t\t\t\t\t\t\t]\\\n\t\t\t\t\t\t\t}"
+    definition: Atmel:QTOUCH_TINY_AVR:1.0.0::QTouch_Info
+    functionality: QTouch_Info
+    api: QTouch:General:Info
+    dependencies: {}
+  QTOUCH_TIMER:
+    user_label: QTOUCH_TIMER
+    configuration: {}
+    definition: Atmel:QTOUCH_TINY_AVR:1.0.0::QTouch_Timer
+    functionality: QTouch_Timer
+    api: QTouch:Driver:Timer
+    dependencies:
+      Timer: Timer
+  QTOUCH_NODE_0:
+    user_label: QTOUCH_NODE_0
+    configuration:
+      order: 1
+      ptc_analog_gain: '1'
+      ptc_csd: 10
+      ptc_digital_gain: '8'
+      ptc_filter_level: '16'
+      ptc_prescaler: Divide by 8
+      ptc_rsel: No Resistor
+    definition: Atmel:QTOUCH_TINY_AVR:1.0.0::QTouch_selfcap_shield_node
+    functionality: QTouch_Node
+    api: QTouch:General:Node
+    dependencies:
+      QTouch Acquisition: QTOUCH_ACQUISITION
+      Y-line: PTC:Y/3
+      QTouch Driven Shield: QTOUCH_DRIVEN_SHIELD_0
+      PTC: PTC
+  QTOUCH_NODE_1:
+    user_label: QTOUCH_NODE_1
+    configuration:
+      order: 2
+      ptc_analog_gain: '1'
+      ptc_csd: 5
+      ptc_digital_gain: '2'
+      ptc_filter_level: '16'
+      ptc_prescaler: Divide by 8
+      ptc_rsel: No Resistor
+    definition: Atmel:QTOUCH_TINY_AVR:1.0.0::QTouch_selfcap_shield_node
+    functionality: QTouch_Node
+    api: QTouch:General:Node
+    dependencies:
+      QTouch Acquisition: QTOUCH_ACQUISITION
+      Y-line: PTC:Y/13
+      QTouch Driven Shield: QTOUCH_DRIVEN_SHIELD_0
+      PTC: PTC
+  QTOUCH_NODE:
+    user_label: QTOUCH_NODE
+    configuration:
+      order: 0
+      ptc_analog_gain: '1'
+      ptc_csd: 10
+      ptc_digital_gain: '8'
+      ptc_filter_level: '16'
+      ptc_prescaler: null
+      ptc_rsel: No Resistor
+    definition: Atmel:QTOUCH_TINY_AVR:1.0.0::QTouch_selfcap_shield_node
+    functionality: QTouch_Node
+    api: QTouch:General:Node
+    dependencies:
+      QTouch Acquisition: QTOUCH_ACQUISITION
+      Y-line: PTC:Y/2
+      QTouch Driven Shield: QTOUCH_DRIVEN_SHIELD_0
+      PTC: PTC
+  QTOUCH_NODE_2:
+    user_label: QTOUCH_NODE_2
+    configuration:
+      order: 3
+      ptc_analog_gain: '1'
+      ptc_csd: 5
+      ptc_digital_gain: '2'
+      ptc_filter_level: '16'
+      ptc_prescaler: Divide by 8
+      ptc_rsel: No Resistor
+    definition: Atmel:QTOUCH_TINY_AVR:1.0.0::QTouch_selfcap_shield_node
+    functionality: QTouch_Node
+    api: QTouch:General:Node
+    dependencies:
+      QTouch Acquisition: QTOUCH_ACQUISITION
+      Y-line: PTC:Y/8
+      QTouch Driven Shield: QTOUCH_DRIVEN_SHIELD_0
+      PTC: PTC
+  QTOUCH_DRIVEN_SHIELD_0:
+    user_label: QTOUCH_DRIVEN_SHIELD_0
+    configuration: {}
+    definition: Atmel:QTOUCH_TINY_AVR:1.0.0::QTouch_Driven_Shield_Dedicated_Pin
+    functionality: QTouch_Driven_shield
+    api: QTouch:General:DrivenShield
+    dependencies:
+      PTC: PTC
+      shield pin: PTC:Y/7
+  QTOUCH_SENSOR:
+    user_label: QTOUCH_SENSOR
+    configuration:
+      anti_tch_drift_rate: 5
+      anti_tch_recal_thrshld: 100 percent of Touch threshold
+      anti_touch_count: 5
+      drift_hold_time: 20
+      max_on_duration: 0
+      reburst_mode: Reburst sensors only in process of calibration / filter in / filter
+        out and AKS groups
+      tch_drift_rate: 20
+      touch_det_int: 4
+    definition: Atmel:QTOUCH_TINY_AVR:1.0.0::QTouch_Sensor
+    functionality: QTouch_Sensor
+    api: QTouch:General:Sensor
+    dependencies: {}
+  QTOUCH_BUTTON_1:
+    user_label: QTOUCH_BUTTON_1
+    configuration:
+      order: 2
+      radius: 30
+      touch_sensor_aks: No AKS setting
+      touch_sensor_hysterisis: 25 percent of Sensor Threshold
+      touch_sensor_threshold: 40
+      x_position: 210
+      y_position: 50
+    definition: Atmel:QTOUCH_TINY_AVR:1.0.0::QTouch_Key
+    functionality: QTouch_Key
+    api: QTouch:General:Key
+    dependencies:
+      QTouch Sensor: QTOUCH_SENSOR
+      QTouch Node: QTOUCH_NODE_1
+  QTOUCH_BUTTON_0:
+    user_label: QTOUCH_BUTTON_0
+    configuration:
+      order: 1
+      radius: 30
+      touch_sensor_aks: No AKS setting
+      touch_sensor_hysterisis: 6.25 percent of Sensor Threshold
+      touch_sensor_threshold: 20
+      x_position: 130
+      y_position: 50
+    definition: Atmel:QTOUCH_TINY_AVR:1.0.0::QTouch_Key
+    functionality: QTouch_Key
+    api: QTouch:General:Key
+    dependencies:
+      QTouch Sensor: QTOUCH_SENSOR
+      QTouch Node: QTOUCH_NODE_0
+  QTOUCH_BUTTON_2:
+    user_label: QTOUCH_BUTTON_2
+    configuration:
+      order: 3
+      radius: 30
+      touch_sensor_aks: No AKS setting
+      touch_sensor_hysterisis: 25 percent of Sensor Threshold
+      touch_sensor_threshold: 40
+      x_position: 290
+      y_position: 50
+    definition: Atmel:QTOUCH_TINY_AVR:1.0.0::QTouch_Key
+    functionality: QTouch_Key
+    api: QTouch:General:Key
+    dependencies:
+      QTouch Sensor: QTOUCH_SENSOR
+      QTouch Node: QTOUCH_NODE_2
+  QTOUCH_BUTTON:
+    user_label: QTOUCH_BUTTON
+    configuration:
+      order: 0
+      radius: 30
+      touch_sensor_aks: No AKS setting
+      touch_sensor_hysterisis: 6.25 percent of Sensor Threshold
+      touch_sensor_threshold: 20
+      x_position: 50
+      y_position: 50
+    definition: Atmel:QTOUCH_TINY_AVR:1.0.0::QTouch_Key
+    functionality: QTouch_Key
+    api: QTouch:General:Key
+    dependencies:
+      QTouch Sensor: QTOUCH_SENSOR
+      QTouch Node: QTOUCH_NODE
+  QTOUCH_FREQUENCY_HOP_0:
+    user_label: QTOUCH_FREQUENCY_HOP_0
+    configuration:
+      frequency_autotune_count_in: 6
+      frequency_autotune_variance: 15
+      frequency_steps: 3
+      hop_frequency_0: FREQ_SEL_0
+      hop_frequency_1: FREQ_SEL_1
+      hop_frequency_10: FREQ_SEL_10
+      hop_frequency_11: FREQ_SEL_11
+      hop_frequency_12: FREQ_SEL_12
+      hop_frequency_13: FREQ_SEL_13
+      hop_frequency_14: FREQ_SEL_14
+      hop_frequency_2: FREQ_SEL_2
+      hop_frequency_3: FREQ_SEL_3
+      hop_frequency_4: FREQ_SEL_4
+      hop_frequency_5: FREQ_SEL_5
+      hop_frequency_6: FREQ_SEL_6
+      hop_frequency_7: FREQ_SEL_7
+      hop_frequency_8: FREQ_SEL_8
+      hop_frequency_9: FREQ_SEL_9
+    definition: Atmel:QTOUCH_TINY_AVR:1.0.0::QTouch_Frequency_Hop_-_Auto_Tuning
+    functionality: QTouch_Frequency_Hop
+    api: QTouch:General:FrequencyHop
+    dependencies: {}
+  QTOUCH_BINDING:
+    user_label: QTOUCH_BINDING
+    configuration: {}
+    definition: Atmel:QTOUCH_TINY_AVR:1.0.0::QTouch_Binding
+    functionality: QTouch_Binding
+    api: QTouch:General:Binding
+    dependencies: {}
+  QTOUCH_REMOVE_BINDING_0:
+    user_label: QTOUCH_REMOVE_BINDING_0
+    configuration: {}
+    definition: Atmel:QTOUCH_TINY_AVR:1.0.0::QTouch_Remove_Binding
+    functionality: QTouch_Remove_Binding
+    api: QTouch:General:RemoveBinding
+    dependencies: {}
+  QTOUCH_DATASTREAMER_0:
+    user_label: QTOUCH_DATASTREAMER_0
+    configuration:
+      debug_board_type: USER_BOARD
+    definition: Atmel:QTOUCH_TINY_AVR:1.0.0::Data_Streamer_UART_Interface
+    functionality: QTouch_DataStreamer
+    api: QTouch:General:Datastreamer
+    dependencies:
+      QTouch Usart: QTOUCH_USART
+  QTOUCH_USART:
+    user_label: QTOUCH_USART
+    configuration: {}
+    definition: Atmel:QTOUCH_TINY_AVR:1.0.0::QTouch_Usart
+    functionality: QTouch_Usart
+    api: QTouch:Driver:USART
+    dependencies:
+      USART: USART
+  QTOUCH_ACQUISITION:
+    user_label: QTOUCH_ACQUISITION
+    configuration:
+      acquisition_frequency: FREQ_SEL_0
+      ptc_acq_tune: Manual user setting of Prescaler, Charge share delay & Series
+        resistor
+      ptc_measurement_time: 20
+      ptc_sensor_type: Selfcap Shield
+    definition: Atmel:QTOUCH_TINY_AVR:1.0.0::QTouch_Acquisition_-_Manual_Tuning
+    functionality: QTouch_Acquisition
+    api: QTouch:General:Acquisition
+    dependencies:
+      QTouch Timer: QTOUCH_TIMER
+      QTouch Binding: QTOUCH_BINDING
+drivers:
+  CLKCTRL:
+    user_label: CLKCTRL
+    definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny3217-MFR::CLKCTRL::driver_config_definition::CLKCTRL::Drivers:CLKCTRL:Init
+    functionality: System
+    api: Drivers:CLKCTRL:Init
+    configuration:
+      clkctrl_mclkctrla_cksel: 20MHz Internal Oscillator (OSC20M)
+      clkctrl_mclkctrla_clkout: false
+      clkctrl_mclkctrlb_pdiv: '2'
+      clkctrl_mclkctrlb_pen: true
+      clkctrl_mclklock_locken: false
+      clkctrl_osc16mctrla_runstdby: false
+      clkctrl_osc20mctrla_runstdby: false
+      clkctrl_osc32kctrla_runstdby: false
+      clkctrl_xosc32kctrla_csut: 1k cycles
+      clkctrl_xosc32kctrla_runstdby: false
+      clkctrl_xosc32kctrla_sel: false
+      cpu_clock_source: Main Clock (CLK_MAIN)
+      enable_clk_per: true
+      enable_extclk: true
+      enable_main: true
+      enable_osc16m: true
+      enable_osc20m: true
+      enable_osculp1k: true
+      enable_osculp32k: true
+      enable_tcd0: true
+      enable_xosc32kctrla: false
+      extosc: 32768
+      nvm_clock_source: Main Clock (CLK_MAIN)
+      osculp1k_clksel_clksel: 32KHz Internal Ultra Low Power Oscillator (OSCULP32K)
+      ram_clock_source: Main Clock (CLK_MAIN)
+      tcd0_ctrla_clksel: 20MHz Internal Oscillator (OSC20M)
+      tcd0_ctrla_syncpres: '1'
+      xosc32kctrla_arch_enable: false
+    optional_signals: []
+    variant: null
+    clocks:
+      domain_group:
+        nodes:
+        - name: CPU
+          input: CPU
+          external: false
+          external_frequency: 0
+        configuration: {}
+  Timer:
+    user_label: Timer
+    definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny3217-MFR::RTC::driver_config_definition::RTC::Drivers:RTC:Init
+    functionality: RTC
+    api: Drivers:RTC:Init
+    configuration:
+      enable_rtc: true
+      inc_isr_harness: true
+      rtc_clksel_clksel: 32KHz Internal Ultra Low Power Oscillator (OSCULP32K)
+      rtc_cmp: 0
+      rtc_cnt: 0
+      rtc_ctrla_prescaler: '1'
+      rtc_ctrla_rtcen: true
+      rtc_ctrla_runstdby: true
+      rtc_dbgctrl_dbgrun: false
+      rtc_intctrl_cmp: true
+      rtc_intctrl_ovf: false
+      rtc_per: 65535
+      rtc_pitctrla_period: 'Off'
+      rtc_pitctrla_piten: false
+      rtc_pitdbgctrl_dbgrun: false
+      rtc_pitintctrl_pi: false
+    optional_signals: []
+    variant: null
+    clocks:
+      domain_group:
+        nodes:
+        - name: RTC
+          input: RTC Clock (CLK_RTC)
+          external: false
+          external_frequency: 0
+        configuration:
+          rtc_clock_source: RTC Clock (CLK_RTC)
+  PTC:
+    user_label: PTC
+    definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny3217-MFR::PTC::driver_config_definition::PTC::Drivers:PTC:Init
+    functionality: PTC
+    api: Drivers:PTC:Init
+    configuration: {}
+    optional_signals:
+    - identifier: PTC:Y/2
+      pad: PA6
+      mode: Enabled
+      configuration: null
+      definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny3217-MFR::optional_signal_definition::PTC.Y.2
+      name: PTC/Y/2
+      label: Y/2
+    - identifier: PTC:Y/3
+      pad: PA7
+      mode: Enabled
+      configuration: null
+      definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny3217-MFR::optional_signal_definition::PTC.Y.3
+      name: PTC/Y/3
+      label: Y/3
+    - identifier: PTC:Y/7
+      pad: PC1
+      mode: Enabled
+      configuration: null
+      definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny3217-MFR::optional_signal_definition::PTC.Y.7
+      name: PTC/Y/7
+      label: Y/7
+    - identifier: PTC:Y/8
+      pad: PC2
+      mode: Enabled
+      configuration: null
+      definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny3217-MFR::optional_signal_definition::PTC.Y.8
+      name: PTC/Y/8
+      label: Y/8
+    - identifier: PTC:Y/13
+      pad: PB4
+      mode: Enabled
+      configuration: null
+      definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny3217-MFR::optional_signal_definition::PTC.Y.13
+      name: PTC/Y/13
+      label: Y/13
+    variant: null
+    clocks:
+      domain_group: null
+  USART:
+    user_label: USART
+    definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny3217-MFR::USART0::driver_config_definition::Async.Polled.Mode::Drivers:USART:Basic
+    functionality: USART
+    api: Drivers:USART:Basic
+    configuration:
+      baud_rate: 38400
+      ctrla_abeie: false
+      ctrla_dreie: false
+      ctrla_lbme: false
+      ctrla_rs485: RS485 Mode disabled
+      ctrla_rxcie: false
+      ctrla_rxsie: false
+      ctrla_txcie: false
+      ctrlb_mpcm: false
+      ctrlb_odme: false
+      ctrlb_rxen: true
+      ctrlb_rxmode: Normal mode
+      ctrlb_sfden: false
+      ctrlb_txen: true
+      ctrlc_chsize: 'Character size: 8 bit'
+      ctrlc_cmode: Asynchronous USART
+      ctrlc_pmode: No Parity
+      ctrlc_sbmode: 1 stop bit
+      ctrlc_ucpha: false
+      ctrlc_udord: false
+      dbgctrl_abmbp: false
+      dbgctrl_dbgrun: false
+      evctrl_irei: false
+      printf_support: false
+      rxplctrl_rxpl: 0
+      txplctrl_txpl: 0
+    optional_signals: []
+    variant:
+      specification: CMODE=0
+      required_signals:
+      - name: USART0/RXD
+        pad: PB3
+        label: RXD
+      - name: USART0/TXD
+        pad: PB2
+        label: TXD
+    clocks:
+      domain_group:
+        nodes:
+        - name: USART
+          input: Main Clock (CLK_MAIN)
+          external: false
+          external_frequency: 0
+        configuration:
+          usart_clock_source: Main Clock (CLK_MAIN)
+  CPUINT:
+    user_label: CPUINT
+    definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny3217-MFR::CPUINT::driver_config_definition::CPUINT::Drivers:CPUINT:Init
+    functionality: System
+    api: Drivers:CPUINT:Init
+    configuration:
+      cpuint_ctrla_cvt: false
+      cpuint_ctrla_ivsel: false
+      cpuint_ctrla_lvl0rr: false
+      cpuint_global_interrupt: true
+      cpuint_lvl0pri_lvl0pri: 0
+      cpuint_lvl1vec_lvl1vec: 0
+      inc_isr_harness: false
+    optional_signals: []
+    variant: null
+    clocks:
+      domain_group: null
+  SLPCTRL:
+    user_label: SLPCTRL
+    definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny3217-MFR::SLPCTRL::driver_config_definition::SLPCTRL::Drivers:SLPCTRL:Init
+    functionality: System
+    api: Drivers:SLPCTRL:Init
+    configuration:
+      slpctrl_ctrla_sen: false
+      slpctrl_ctrla_smode: Idle mode
+    optional_signals: []
+    variant: null
+    clocks:
+      domain_group: null
+  BOD:
+    user_label: BOD
+    definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny3217-MFR::BOD::driver_config_definition::BOD::Drivers:BOD:Init
+    functionality: System
+    api: Drivers:BOD:Init
+    configuration:
+      bod_ctrla_sleep: Disabled
+      bod_intctrl_vlmcfg: Interrupt when supply goes below VLM level
+      bod_intctrl_vlmie: false
+      bod_vlmctrla_vlmlvl: VLM threshold 5% above BOD level
+      inc_isr_harness: false
+    optional_signals: []
+    variant: null
+    clocks:
+      domain_group:
+        nodes:
+        - name: BOD
+          input: 32KHz divided by 32
+          external: false
+          external_frequency: 0
+        configuration:
+          bod_clock_source: 32KHz divided by 32
+pads:
+  LED3:
+    name: PA4
+    definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny3217-MFR::pad::PA4
+    mode: Digital output
+    user_label: LED3
+    configuration:
+      pad_initial_level: High
+  LED2:
+    name: PA5
+    definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny3217-MFR::pad::PA5
+    mode: Digital output
+    user_label: LED2
+    configuration:
+      pad_initial_level: High
+  PA6:
+    name: PA6
+    definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny3217-MFR::pad::PA6
+    mode: Analog
+    user_label: PA6
+    configuration: null
+  PA7:
+    name: PA7
+    definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny3217-MFR::pad::PA7
+    mode: Analog
+    user_label: PA7
+    configuration: null
+  PB7:
+    name: PB7
+    definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny3217-MFR::pad::PB7
+    mode: Digital input
+    user_label: PB7
+    configuration: null
+  LED:
+    name: PB6
+    definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny3217-MFR::pad::PB6
+    mode: Digital output
+    user_label: LED
+    configuration:
+      pad_initial_level: High
+  PB5:
+    name: PB5
+    definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny3217-MFR::pad::PB5
+    mode: Digital input
+    user_label: PB5
+    configuration:
+      pad_pull_config: Pull-up
+  PB4:
+    name: PB4
+    definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny3217-MFR::pad::PB4
+    mode: Analog
+    user_label: PB4
+    configuration: null
+  PB3:
+    name: PB3
+    definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny3217-MFR::pad::PB3
+    mode: Digital input
+    user_label: PB3
+    configuration: null
+  PB2:
+    name: PB2
+    definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny3217-MFR::pad::PB2
+    mode: Digital output
+    user_label: PB2
+    configuration: null
+  LED1:
+    name: PB1
+    definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny3217-MFR::pad::PB1
+    mode: Digital output
+    user_label: LED1
+    configuration:
+      pad_initial_level: High
+  LED0:
+    name: PB0
+    definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny3217-MFR::pad::PB0
+    mode: Digital output
+    user_label: LED0
+    configuration:
+      pad_initial_level: High
+  PC1:
+    name: PC1
+    definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny3217-MFR::pad::PC1
+    mode: Analog
+    user_label: PC1
+    configuration: null
+  PC2:
+    name: PC2
+    definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny3217-MFR::pad::PC2
+    mode: Analog
+    user_label: PC2
+    configuration: null
+  SHIELD_ENABLE:
+    name: PC3
+    definition: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny3217-MFR::pad::PC3
+    mode: Digital output
+    user_label: SHIELD_ENABLE
+    configuration: null
+toolchain_options:
+- definition:
+    identifier: Atmel:ATtiny417_81x_161x_321x_drivers:1.0.0::ATtiny3217-MFR::environment_definition::All:Atmel.Studio:7.0.0
+  configuration:
+    compiler_config:
+      avrgcc_compiler_miscellaneous_OtherFlags: -std=gnu99
+    linker_config:
+      avrgcc_linker_miscellaneous_LinkerFlags: ''
